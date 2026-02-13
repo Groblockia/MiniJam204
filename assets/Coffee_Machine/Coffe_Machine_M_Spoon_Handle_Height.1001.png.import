@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sntf2g72tlp8"
-path.s3tc="res://.godot/imported/Coffe_Machine_M_Spoon_Handle_Height.1001.png-cf8321f3c378e659bffeef583f7d0b43.s3tc.ctex"
+path.s3tc="res://.godot/imported/Coffe_Machine_M_Spoon_Handle_Height.1001.png-ee4e8b78c76ec5c9d5eaef200f108072.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_Height.1001.png"
-dest_files=["res://.godot/imported/Coffe_Machine_M_Spoon_Handle_Height.1001.png-cf8321f3c378e659bffeef583f7d0b43.s3tc.ctex"]
+source_file="res://assets/coffee_machine/Coffe_Machine_M_Spoon_Handle_Height.1001.png"
+dest_files=["res://.godot/imported/Coffe_Machine_M_Spoon_Handle_Height.1001.png-ee4e8b78c76ec5c9d5eaef200f108072.s3tc.ctex"]
 
 [params]
 

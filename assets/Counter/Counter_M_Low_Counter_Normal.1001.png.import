@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr5enkt361dmw"
-path.s3tc="res://.godot/imported/Counter_M_Low_Counter_Normal.1001.png-06af179cd1ab801716d4bf154dcf5966.s3tc.ctex"
+path.s3tc="res://.godot/imported/Counter_M_Low_Counter_Normal.1001.png-d44c83ad76115eabd230ef549d57a423.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Counter/Counter_M_Low_Counter_Normal.1001.png"
-dest_files=["res://.godot/imported/Counter_M_Low_Counter_Normal.1001.png-06af179cd1ab801716d4bf154dcf5966.s3tc.ctex"]
+source_file="res://assets/counter/Counter_M_Low_Counter_Normal.1001.png"
+dest_files=["res://.godot/imported/Counter_M_Low_Counter_Normal.1001.png-d44c83ad76115eabd230ef549d57a423.s3tc.ctex"]
 
 [params]
 

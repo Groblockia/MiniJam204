@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqw8m4hki14ge"
-path.s3tc="res://.godot/imported/Coffe_Machine_M_Spoon_Head_Metallic.1001.png-fd371a24971f58d864239adf17846287.s3tc.ctex"
+path.s3tc="res://.godot/imported/Coffe_Machine_M_Spoon_Head_Metallic.1001.png-142bfbaa67edd41e168983ccd7b9757d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_Metallic.1001.png"
-dest_files=["res://.godot/imported/Coffe_Machine_M_Spoon_Head_Metallic.1001.png-fd371a24971f58d864239adf17846287.s3tc.ctex"]
+source_file="res://assets/coffee_machine/Coffe_Machine_M_Spoon_Head_Metallic.1001.png"
+dest_files=["res://.godot/imported/Coffe_Machine_M_Spoon_Head_Metallic.1001.png-142bfbaa67edd41e168983ccd7b9757d.s3tc.ctex"]
 
 [params]
 

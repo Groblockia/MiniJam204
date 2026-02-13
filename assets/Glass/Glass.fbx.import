@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b2u5dqox0ie4x"
-path="res://.godot/imported/Glass.fbx-3dce19c91635ea99a1477ed867a9649a.scn"
+path="res://.godot/imported/Glass.fbx-66d5235622cee7fa96a7da264d99e84d.scn"
 
 [deps]
 
-source_file="res://assets/Glass/Glass.fbx"
-dest_files=["res://.godot/imported/Glass.fbx-3dce19c91635ea99a1477ed867a9649a.scn"]
+source_file="res://assets/glass/Glass.fbx"
+dest_files=["res://.godot/imported/Glass.fbx-66d5235622cee7fa96a7da264d99e84d.scn"]
 
 [params]
 

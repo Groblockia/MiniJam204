@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bibu8od4d4ein"
-path="res://.godot/imported/Counter.fbx-9e27daedbb2cebd03efacbff3897f0cf.scn"
+path="res://.godot/imported/Counter.fbx-e7f492fb94d05c933c7be55cb1312860.scn"
 
 [deps]
 
-source_file="res://assets/Counter/Counter.fbx"
-dest_files=["res://.godot/imported/Counter.fbx-9e27daedbb2cebd03efacbff3897f0cf.scn"]
+source_file="res://assets/counter/Counter.fbx"
+dest_files=["res://.godot/imported/Counter.fbx-e7f492fb94d05c933c7be55cb1312860.scn"]
 
 [params]
 

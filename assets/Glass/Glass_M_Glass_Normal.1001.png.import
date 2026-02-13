@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3ote48x3bg72"
-path.s3tc="res://.godot/imported/Glass_M_Glass_Normal.1001.png-12e5dc9acbb661216590e35420b70ede.s3tc.ctex"
+path.s3tc="res://.godot/imported/Glass_M_Glass_Normal.1001.png-b5a7e4cf889110c6e054737411fc3c59.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Glass/Glass_M_Glass_Normal.1001.png"
-dest_files=["res://.godot/imported/Glass_M_Glass_Normal.1001.png-12e5dc9acbb661216590e35420b70ede.s3tc.ctex"]
+source_file="res://assets/glass/Glass_M_Glass_Normal.1001.png"
+dest_files=["res://.godot/imported/Glass_M_Glass_Normal.1001.png-b5a7e4cf889110c6e054737411fc3c59.s3tc.ctex"]
 
 [params]
 

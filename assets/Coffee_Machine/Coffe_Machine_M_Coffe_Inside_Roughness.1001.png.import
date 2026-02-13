@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cplibr7aujqx7"
-path.s3tc="res://.godot/imported/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png-aa3aad4531d764c7c15c5cbf7e11fe51.s3tc.ctex"
+path.s3tc="res://.godot/imported/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png-ecc32b17953b8d9770053bacec77e71d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png"
-dest_files=["res://.godot/imported/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png-aa3aad4531d764c7c15c5cbf7e11fe51.s3tc.ctex"]
+source_file="res://assets/coffee_machine/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png"
+dest_files=["res://.godot/imported/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png-ecc32b17953b8d9770053bacec77e71d.s3tc.ctex"]
 
 [params]
 

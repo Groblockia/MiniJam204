@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxoduj7cx514r"
-path.s3tc="res://.godot/imported/Glass_M_Glass_Roughness.1001.png-2c4623aca13c48e8af889e959d3fd5ce.s3tc.ctex"
+path.s3tc="res://.godot/imported/Glass_M_Glass_Roughness.1001.png-e18f488d3a601f0c263dd9db2f4cc5c2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Glass/Glass_M_Glass_Roughness.1001.png"
-dest_files=["res://.godot/imported/Glass_M_Glass_Roughness.1001.png-2c4623aca13c48e8af889e959d3fd5ce.s3tc.ctex"]
+source_file="res://assets/glass/Glass_M_Glass_Roughness.1001.png"
+dest_files=["res://.godot/imported/Glass_M_Glass_Roughness.1001.png-e18f488d3a601f0c263dd9db2f4cc5c2.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c384w27da0adw"]
+
+[ext_resource type="Script" uid="uid://fdss3oxpsj3s" path="res://components/interaction_component.gd" id="1_ydfy1"]
+
+[node name="InteractionComponent" type="StaticBody3D" unique_id=923533005]
+script = ExtResource("1_ydfy1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1026797602]

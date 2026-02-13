@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://digoevj44slu7"
-path="res://.godot/imported/Coffe_Machine.fbx-83c023be002365fb8425de4490f332cb.scn"
+path="res://.godot/imported/Coffe_Machine.fbx-6c70330b8b3a8ae04922f7acbfab5783.scn"
 
 [deps]
 
-source_file="res://assets/Coffee_Machine/Coffe_Machine.fbx"
-dest_files=["res://.godot/imported/Coffe_Machine.fbx-83c023be002365fb8425de4490f332cb.scn"]
+source_file="res://assets/coffee_machine/Coffe_Machine.fbx"
+dest_files=["res://.godot/imported/Coffe_Machine.fbx-6c70330b8b3a8ae04922f7acbfab5783.scn"]
 
 [params]
 

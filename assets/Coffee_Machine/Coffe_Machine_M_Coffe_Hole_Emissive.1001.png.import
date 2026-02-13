@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfc7sdcpoy6vh"
-path.s3tc="res://.godot/imported/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png-a5a2b77c5c7f95781edbf2da107a6a86.s3tc.ctex"
+path.s3tc="res://.godot/imported/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png-15c57f364342041559da974cc528aca5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png"
-dest_files=["res://.godot/imported/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png-a5a2b77c5c7f95781edbf2da107a6a86.s3tc.ctex"]
+source_file="res://assets/coffee_machine/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png"
+dest_files=["res://.godot/imported/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png-15c57f364342041559da974cc528aca5.s3tc.ctex"]
 
 [params]
 

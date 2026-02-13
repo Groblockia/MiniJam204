@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://uhs7bowdv7c"]
 
-[ext_resource type="PackedScene" uid="uid://b2u5dqox0ie4x" path="res://assets/Glass/Glass.fbx" id="1_mxcbv"]
-[ext_resource type="Texture2D" uid="uid://cbcgwv41nkkn4" path="res://assets/Glass/Glass_M_Glass_BaseColor.1001.png" id="2_ghn38"]
-[ext_resource type="Texture2D" uid="uid://v318riad48kw" path="res://assets/Glass/Glass_M_Glass_Height.1001.png" id="3_ednh6"]
-[ext_resource type="Texture2D" uid="uid://boywsbwih5htc" path="res://assets/Glass/Glass_M_Glass_Metallic.1001.png" id="4_wu6mp"]
-[ext_resource type="Texture2D" uid="uid://3ote48x3bg72" path="res://assets/Glass/Glass_M_Glass_Normal.1001.png" id="5_u3h0u"]
-[ext_resource type="Texture2D" uid="uid://cxoduj7cx514r" path="res://assets/Glass/Glass_M_Glass_Roughness.1001.png" id="6_p887c"]
+[ext_resource type="PackedScene" uid="uid://b2u5dqox0ie4x" path="res://assets/glass/Glass.fbx" id="1_mxcbv"]
+[ext_resource type="Texture2D" uid="uid://cbcgwv41nkkn4" path="res://assets/glass/Glass_M_Glass_BaseColor.1001.png" id="2_ghn38"]
+[ext_resource type="Texture2D" uid="uid://v318riad48kw" path="res://assets/glass/Glass_M_Glass_Height.1001.png" id="3_ednh6"]
+[ext_resource type="Texture2D" uid="uid://boywsbwih5htc" path="res://assets/glass/Glass_M_Glass_Metallic.1001.png" id="4_wu6mp"]
+[ext_resource type="Texture2D" uid="uid://3ote48x3bg72" path="res://assets/glass/Glass_M_Glass_Normal.1001.png" id="5_u3h0u"]
+[ext_resource type="Texture2D" uid="uid://cxoduj7cx514r" path="res://assets/glass/Glass_M_Glass_Roughness.1001.png" id="6_p887c"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vw6vy"]
 albedo_texture = ExtResource("2_ghn38")
