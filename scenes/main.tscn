@@ -1,3 +1,20 @@
 [gd_scene format=3 uid="uid://cyaa6v0cwy3rm"]
 
+[ext_resource type="Texture2D" uid="uid://dyjcs14qw7y2i" path="res://icon.svg" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://dcssat7fkjr2t" path="res://characters/player/player.tscn" id="2_0wfyh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wfyh"]
+albedo_texture = ExtResource("1_o5qli")
+uv1_triplanar = true
+
 [node name="main" type="Node3D" unique_id=1111915395]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1040247793]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=452260307]
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_0wfyh")
+
+[node name="Player" parent="." unique_id=362338799 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.495484, 0)
