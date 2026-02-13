@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://7jlhrdlwjita"]
+
+[ext_resource type="PackedScene" uid="uid://bibu8od4d4ein" path="res://assets/Counter/Counter.fbx" id="1_0xfuw"]
+
+[node name="Node3D" type="Node3D" unique_id=9354697]
+
+[node name="Counter" parent="." unique_id=235129883 instance=ExtResource("1_0xfuw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20757139, 1.1920929e-07, -1.3730354)
