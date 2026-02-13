@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bne4y5xn6jaxj"]
+
+[ext_resource type="Script" uid="uid://p6uxr4q1e4b6" path="res://characters/npcs/npc_test.gd" id="1_xgqvg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgqvg"]
+albedo_color = Color(1, 0.76533335, 0.120000005, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3ph1u"]
+material = SubResource("StandardMaterial3D_xgqvg")
+height = 4.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yfhrv"]
+height = 4.0
+
+[node name="npc_test" type="CharacterBody3D" unique_id=1447798352]
+script = ExtResource("1_xgqvg")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1521777205]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1064891793]
+mesh = SubResource("CapsuleMesh_3ph1u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=11260288]
+shape = SubResource("CapsuleShape3D_yfhrv")
