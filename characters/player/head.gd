@@ -1,12 +1,12 @@
 extends Node3D
 
 @onready var player = $".."
-@onready var camera = $Camera3D
+@onready var camera = %Camera
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	player.rotation.y = self.rotation.y
 
 func _unhandled_input(event: InputEvent) -> void:

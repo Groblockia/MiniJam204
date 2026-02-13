@@ -25,9 +25,32 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("2_xxgcw")
 
-[node name="Camera3D" type="Camera3D" parent="Head" unique_id=368363956]
+[node name="Camera" type="Camera3D" parent="Head" unique_id=368363956]
+unique_name_in_owner = true
 
-[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=614398386]
+[node name="Raycast" type="RayCast3D" parent="Head/Camera" unique_id=614398386]
+unique_name_in_owner = true
 target_position = Vector3(0, 0, -3)
 collision_mask = 5
 collide_with_areas = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=524335615]
+
+[node name="InteractLabel" type="Label" parent="CanvasLayer" unique_id=1173959722]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 23.0
+text = "CACA"
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1412398765]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/CenterContainer" unique_id=874312585]
+custom_minimum_size = Vector2(35, 35)
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.49, 0, 0, 1)

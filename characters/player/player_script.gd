@@ -5,6 +5,7 @@ class_name Player
 
 @onready var head = %Head
 @onready var player_can_move := true
+@onready var aim_raycast = %Raycast
 
 var input_dir
 var direction
@@ -12,8 +13,8 @@ var direction
 func _ready() -> void:
 	print("oe c greg")
 
-func _process(delta: float) -> void:
-	pass
+func _process(_delta: float) -> void:
+	show_interact_prompt()
 
 func _physics_process(delta: float) -> void:
 	# movement code
@@ -43,8 +44,17 @@ func toggle_mouse() -> void:
 		player_can_move = true
 
 func send_interact():
-	var col = $Head/Camera3D/RayCast3D.get_collider()
+	var col = aim_raycast.get_collider()
 	if col != null:
 		InteractionManager.interact(col)
 	else:
 		pass
+
+func show_interact_prompt():
+	var col = aim_raycast.get_collider()
+	if col is Interactable:
+		%InteractLabel.text = col.displayName
+		%InteractLabel.position = %Camera.unproject_position(col.position)
+		%InteractLabel.show()
+	else:
+		%InteractLabel.hide()

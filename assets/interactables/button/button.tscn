@@ -9,7 +9,7 @@ albedo_texture = ExtResource("2_pf57p")
 [sub_resource type="BoxShape3D" id="BoxShape3D_pf57p"]
 size = Vector3(1, 0.33398438, 1)
 
-[node name="Button" type="Area3D" unique_id=291262811]
+[node name="Button" type="StaticBody3D" unique_id=1029118493]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_1kwxr")

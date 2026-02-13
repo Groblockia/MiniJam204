@@ -9,8 +9,10 @@ func interact(collided: Object)-> void:
 
 ## activates hovered logic on object
 func hover_on(collided: Object) -> void:
-	collided.hover_on()
+	if collided is Interactable:
+		collided.hover_on()
 
 ## deactivates hovered logic on object
 func hover_off(collided: Object)-> void:
-	collided.hover_off()
+	if collided is Interactable:
+		collided.hover_off()
