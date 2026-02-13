@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://cborq3fvjwdek"]
+
+[ext_resource type="PackedScene" uid="uid://digoevj44slu7" path="res://assets/Coffee_Machine/Coffe_Machine.fbx" id="1_anech"]
+[ext_resource type="Texture2D" uid="uid://be01xplsw0hr3" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffee_Front_BaseColor.1001.png" id="2_vaiik"]
+[ext_resource type="Texture2D" uid="uid://cms56lo0qddse" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffee_Front_Emissive.1001.png" id="3_vlnk1"]
+[ext_resource type="Texture2D" uid="uid://bhd8dhdd1wwun" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffee_Front_Height.1001.png" id="4_j24pd"]
+[ext_resource type="Texture2D" uid="uid://i1jm4gsl2527" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffee_Front_Metallic.1001.png" id="5_ny658"]
+[ext_resource type="Texture2D" uid="uid://btb8cija68i0s" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffee_Front_Normal.1001.png" id="6_ue8il"]
+[ext_resource type="Texture2D" uid="uid://b38nuky2tkjxp" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffee_Front_Roughness.1001.png" id="7_ad0qb"]
+[ext_resource type="Texture2D" uid="uid://70705iolm8m3" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Back_BaseColor.1001.png" id="8_vl5o7"]
+[ext_resource type="Texture2D" uid="uid://b4r4wbjdo6hsc" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Back_Emissive.1001.png" id="9_iq7fq"]
+[ext_resource type="Texture2D" uid="uid://pjj8hi6du6tm" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Back_Height.1001.png" id="10_nncqd"]
+[ext_resource type="Texture2D" uid="uid://k45uxsktbdb3" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Back_Metallic.1001.png" id="11_u706k"]
+[ext_resource type="Texture2D" uid="uid://bcw1oncwjbvbm" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Back_Normal.1001.png" id="12_yd7ur"]
+[ext_resource type="Texture2D" uid="uid://du631aigikx8r" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Back_Roughness.1001.png" id="13_6bui1"]
+[ext_resource type="Texture2D" uid="uid://djtj8fiecween" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Inside_BaseColor.1001.png" id="14_yd0f6"]
+[ext_resource type="Texture2D" uid="uid://tevx5oxk55kn" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Inside_Height.1001.png" id="16_yyscy"]
+[ext_resource type="Texture2D" uid="uid://dvctp1dm3cdew" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Inside_Metallic.1001.png" id="17_4jvhn"]
+[ext_resource type="Texture2D" uid="uid://2lvr46wdc80g" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Inside_Normal.1001.png" id="18_nhpcx"]
+[ext_resource type="Texture2D" uid="uid://cplibr7aujqx7" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Inside_Roughness.1001.png" id="19_c47dc"]
+[ext_resource type="Texture2D" uid="uid://un02i012gsuv" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_BaseColor.1001.png" id="20_r88it"]
+[ext_resource type="Texture2D" uid="uid://cfc7sdcpoy6vh" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_Emissive.1001.png" id="21_pynv1"]
+[ext_resource type="Texture2D" uid="uid://dekycia0v0snv" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_Height.1001.png" id="22_x3rlp"]
+[ext_resource type="Texture2D" uid="uid://cc6d5iumyufs" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_Metallic.1001.png" id="23_xliuk"]
+[ext_resource type="Texture2D" uid="uid://cwxb2bhftxnq1" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_Normal.1001.png" id="24_7so7r"]
+[ext_resource type="Texture2D" uid="uid://dg2k0uxwi6djj" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_BaseColor.1001.png" id="25_c47dc"]
+[ext_resource type="Texture2D" uid="uid://d1jvnraxxc3me" path="res://assets/Coffee_Machine/Coffe_Machine_M_Coffe_Hole_Roughness.1001.png" id="25_y8msd"]
+[ext_resource type="Texture2D" uid="uid://cs84xf1govyeq" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_Emissive.1001.png" id="26_r88it"]
+[ext_resource type="Texture2D" uid="uid://bdqenjrwoeh6" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_Height.1001.png" id="27_pynv1"]
+[ext_resource type="Texture2D" uid="uid://bqw8m4hki14ge" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_Metallic.1001.png" id="28_x3rlp"]
+[ext_resource type="Texture2D" uid="uid://ywxpqrovdqtb" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_Normal.1001.png" id="29_xliuk"]
+[ext_resource type="Texture2D" uid="uid://bvfrdmxurv4mg" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Head_Roughness.1001.png" id="30_7so7r"]
+[ext_resource type="Texture2D" uid="uid://dj3nsyn2a3gj7" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_BaseColor.1001.png" id="31_y8msd"]
+[ext_resource type="Texture2D" uid="uid://cy47nppc46nim" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_Emissive.1001.png" id="32_mdefx"]
+[ext_resource type="Texture2D" uid="uid://sntf2g72tlp8" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_Height.1001.png" id="33_c0q7g"]
+[ext_resource type="Texture2D" uid="uid://ckqk0refaqw2i" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_Metallic.1001.png" id="34_b8kee"]
+[ext_resource type="Texture2D" uid="uid://dedi2kjidoi4j" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_Normal.1001.png" id="35_jatwh"]
+[ext_resource type="Texture2D" uid="uid://bjfiy0xkxwt8r" path="res://assets/Coffee_Machine/Coffe_Machine_M_Spoon_Handle_Roughness.1001.png" id="36_2vk7j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vl5o7"]
+albedo_texture = ExtResource("2_vaiik")
+metallic = 1.0
+metallic_texture = ExtResource("5_ny658")
+roughness_texture = ExtResource("7_ad0qb")
+emission_enabled = true
+emission_texture = ExtResource("3_vlnk1")
+normal_enabled = true
+normal_texture = ExtResource("6_ue8il")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_j24pd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iq7fq"]
+albedo_texture = ExtResource("8_vl5o7")
+metallic = 1.0
+metallic_texture = ExtResource("11_u706k")
+roughness_texture = ExtResource("13_6bui1")
+emission_enabled = true
+emission_texture = ExtResource("9_iq7fq")
+normal_enabled = true
+normal_texture = ExtResource("12_yd7ur")
+heightmap_enabled = true
+heightmap_texture = ExtResource("10_nncqd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nncqd"]
+albedo_texture = ExtResource("14_yd0f6")
+metallic = 1.0
+metallic_texture = ExtResource("17_4jvhn")
+roughness_texture = ExtResource("19_c47dc")
+emission_enabled = true
+emission_texture = ExtResource("21_pynv1")
+normal_enabled = true
+normal_texture = ExtResource("18_nhpcx")
+heightmap_enabled = true
+heightmap_texture = ExtResource("16_yyscy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u706k"]
+albedo_texture = ExtResource("20_r88it")
+metallic = 1.0
+metallic_texture = ExtResource("23_xliuk")
+roughness_texture = ExtResource("25_y8msd")
+emission_enabled = true
+emission_texture = ExtResource("21_pynv1")
+normal_enabled = true
+normal_texture = ExtResource("24_7so7r")
+heightmap_enabled = true
+heightmap_texture = ExtResource("22_x3rlp")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yd7ur"]
+albedo_texture = ExtResource("25_c47dc")
+metallic = 1.0
+metallic_texture = ExtResource("28_x3rlp")
+roughness_texture = ExtResource("30_7so7r")
+emission_enabled = true
+emission_texture = ExtResource("26_r88it")
+normal_enabled = true
+normal_texture = ExtResource("29_xliuk")
+heightmap_enabled = true
+heightmap_texture = ExtResource("27_pynv1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bui1"]
+albedo_texture = ExtResource("31_y8msd")
+metallic = 1.0
+metallic_texture = ExtResource("34_b8kee")
+roughness_texture = ExtResource("36_2vk7j")
+emission_enabled = true
+emission_texture = ExtResource("32_mdefx")
+normal_enabled = true
+normal_texture = ExtResource("35_jatwh")
+heightmap_enabled = true
+heightmap_texture = ExtResource("33_c0q7g")
+
+[node name="Coffe_Machine" unique_id=463634666 instance=ExtResource("1_anech")]
+
+[node name="Coffe_Machine" parent="." index="0" unique_id=2144354846]
+surface_material_override/0 = SubResource("StandardMaterial3D_vl5o7")
+surface_material_override/1 = SubResource("StandardMaterial3D_iq7fq")
+surface_material_override/2 = SubResource("StandardMaterial3D_nncqd")
+surface_material_override/3 = SubResource("StandardMaterial3D_u706k")
+surface_material_override/4 = SubResource("StandardMaterial3D_yd7ur")
+surface_material_override/5 = SubResource("StandardMaterial3D_6bui1")
