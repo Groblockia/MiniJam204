@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cie0vu6vy81fr"]
+
+[ext_resource type="Texture2D" uid="uid://dywus62bysbws" path="res://assets/Counter/Counter_M_Low_Counter_BaseColor.1001.png" id="1_2k47b"]
+[ext_resource type="Texture2D" uid="uid://baybi37je2463" path="res://assets/Counter/Counter_M_Low_Counter_Emissive.1001.png" id="2_804xt"]
+[ext_resource type="Texture2D" uid="uid://cd1f67bykjygs" path="res://assets/Counter/Counter_M_Low_Counter_Height.1001.png" id="3_n3yxj"]
+[ext_resource type="Texture2D" uid="uid://ba71fpmcyc53t" path="res://assets/Counter/Counter_M_Low_Counter_Metallic.1001.png" id="4_16r5i"]
+[ext_resource type="Texture2D" uid="uid://cr5enkt361dmw" path="res://assets/Counter/Counter_M_Low_Counter_Normal.1001.png" id="5_i44k7"]
+[ext_resource type="Texture2D" uid="uid://dacgoco8ctjhn" path="res://assets/Counter/Counter_M_Low_Counter_Roughness.1001.png" id="6_2vdsf"]
+
+[resource]
+albedo_texture = ExtResource("1_2k47b")
+metallic = 1.0
+metallic_texture = ExtResource("4_16r5i")
+roughness_texture = ExtResource("6_2vdsf")
+emission_enabled = true
+emission_texture = ExtResource("2_804xt")
+normal_enabled = true
+normal_texture = ExtResource("5_i44k7")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_n3yxj")

@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://7jlhrdlwjita"]
 
 [ext_resource type="PackedScene" uid="uid://bibu8od4d4ein" path="res://assets/Counter/Counter.fbx" id="1_0xfuw"]
+[ext_resource type="Material" uid="uid://cie0vu6vy81fr" path="res://assets/Counter/counter_bottom.tres" id="2_bs6qm"]
+[ext_resource type="Material" uid="uid://uqelcp8heuhv" path="res://assets/Counter/counter_top.tres" id="3_786ff"]
 
-[node name="Node3D" type="Node3D" unique_id=9354697]
+[node name="Counter" unique_id=235129883 instance=ExtResource("1_0xfuw")]
 
-[node name="Counter" parent="." unique_id=235129883 instance=ExtResource("1_0xfuw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20757139, 1.1920929e-07, -1.3730354)
+[node name="Cube" parent="." index="0" unique_id=151137881]
+surface_material_override/0 = ExtResource("2_bs6qm")
+surface_material_override/1 = ExtResource("3_786ff")
