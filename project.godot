@@ -48,9 +48,20 @@ toggle_mouse={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="player"
+3d_physics/layer_3="interactable"
+3d_physics/layer_4="enemies"
+3d_physics/layer_5="misc"
+
 [physics]
 
+common/physics_ticks_per_second=120
+common/physics_jitter_fix=0.0
 3d/physics_engine="Jolt Physics"
+common/physics_interpolation=true
 
 [rendering]
 

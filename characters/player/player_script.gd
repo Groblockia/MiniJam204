@@ -14,14 +14,15 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	# movement code
-	input_dir = (Input.get_vector("left", "right", "forward", "backward"))
-	direction = ( (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		.rotated(Vector3.UP, head.rotation.y) )
-	
-	velocity.x = lerp(velocity.x, direction.x * DEFAULT_SPEED, delta * 10)
-	velocity.z = lerp(velocity.z, direction.z * DEFAULT_SPEED, delta * 10)
-	
-	move_and_slide()
+	if player_can_move:
+		input_dir = (Input.get_vector("left", "right", "forward", "backward"))
+		direction = ( (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+			.rotated(Vector3.UP, head.rotation.y) )
+		
+		velocity.x = lerp(velocity.x, direction.x * DEFAULT_SPEED, delta * 10)
+		velocity.z = lerp(velocity.z, direction.z * DEFAULT_SPEED, delta * 10)
+		
+		move_and_slide()
 
 func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("toggle_mouse"):
