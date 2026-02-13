@@ -75,7 +75,7 @@ environment = SubResource("Environment_jyhfs")
 transform = Transform3D(0.99874395, -0.018660098, -0.04650052, 0.050104868, 0.3719531, 0.92689824, 0, -0.9280639, 0.37242088, 0, 0, 0)
 
 [node name="npc_test" parent="." unique_id=1447798352 instance=ExtResource("7_o6xl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9888377, 2.5, -2.0269127)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4111943, 0.56103516, -6.9995174)
 
 [node name="NpcPositionMarkers" type="Node3D" parent="." unique_id=183469600]
 
