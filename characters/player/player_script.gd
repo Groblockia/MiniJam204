@@ -12,6 +12,9 @@ var direction
 func _ready() -> void:
 	print("oe c greg")
 
+func _process(delta: float) -> void:
+	pass
+
 func _physics_process(delta: float) -> void:
 	# movement code
 	if player_can_move:
@@ -22,11 +25,14 @@ func _physics_process(delta: float) -> void:
 		velocity.x = lerp(velocity.x, direction.x * DEFAULT_SPEED, delta * 10)
 		velocity.z = lerp(velocity.z, direction.z * DEFAULT_SPEED, delta * 10)
 		
+		velocity.y -= 9.8 * delta
 		move_and_slide()
 
 func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("toggle_mouse"):
 		toggle_mouse()
+	if Input.is_action_just_pressed("interact"):
+		send_interact()
 
 func toggle_mouse() -> void:
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -35,3 +41,10 @@ func toggle_mouse() -> void:
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		player_can_move = true
+
+func send_interact():
+	var col = $Head/Camera3D/RayCast3D.get_collider()
+	if col != null:
+		InteractionManager.interact(col)
+	else:
+		pass
