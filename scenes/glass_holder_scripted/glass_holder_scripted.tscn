@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://2xg6fayhpxip"]
+
+[ext_resource type="PackedScene" uid="uid://bv10foqbxrevj" path="res://assets/glass_holder/glass_holder.tscn" id="1_3bf6o"]
+[ext_resource type="Script" uid="uid://dfy1siqt332ng" path="res://scenes/glass_holder_scripted/glass_holder_scripted.gd" id="1_k0lrv"]
+[ext_resource type="PackedScene" uid="uid://uhs7bowdv7c" path="res://assets/glass/glass.tscn" id="2_02kvt"]
+
+[node name="glass_holder_scripted" type="Node3D" unique_id=1983153162]
+script = ExtResource("1_k0lrv")
+
+[node name="Glass_Holder" parent="." unique_id=135483045 instance=ExtResource("1_3bf6o")]
+
+[node name="GlassContainer" type="Node3D" parent="." unique_id=968073939]
+
+[node name="Glass" parent="GlassContainer" unique_id=1358902145 instance=ExtResource("2_02kvt")]
+transform = Transform3D(0.46440926, -0.8856207, 0, 0.8856207, 0.46440926, 0, 0, 0, 1, 0.55, 0.2, 0)
