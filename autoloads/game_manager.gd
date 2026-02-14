@@ -2,6 +2,8 @@ extends Node
 
 @onready var base_npc = preload("res://characters/npcs/npc_test.tscn")
 
+signal leave_screen
+
 var player
 var order_point
 var spawn_point
@@ -46,3 +48,6 @@ func start_ordering():
 	glass = randi_range(1,3)
 	food = randi_range(1,3)
 	is_ordering = true
+
+func leave_register_screen():
+	leave_screen.emit()

@@ -125,5 +125,5 @@ transform = Transform3D(-4.371138e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.
 displayName = "Coffe machine"
 
 [node name="GuiPanel" parent="." unique_id=1826651836 instance=ExtResource("4_o6xl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5935519, 3.1929736, -3.4281585)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5935519, 3.1929736, -3.5348952)
 displayName = "caca"

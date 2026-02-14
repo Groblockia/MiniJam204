@@ -10,7 +10,7 @@ func _physics_process(_delta: float) -> void:
 	player.rotation.y = self.rotation.y
 
 func _unhandled_input(event: InputEvent) -> void:
-	if player.player_can_move:
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			# rotate the head and camera based on mouse movement
 			rotate_y(-event.relative.x * 0.005/2)

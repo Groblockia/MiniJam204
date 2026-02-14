@@ -21,14 +21,7 @@ func _ready() -> void:
 	node_area.mouse_exited.connect(_mouse_exited_area)
 	node_area.input_event.connect(_mouse_input_event)
 
-	# If the material is NOT set to use billboard settings, then avoid running billboard specific code
-	#if node_quad.get_surface_override_material(0).billboard_mode == BaseMaterial3D.BillboardMode.BILLBOARD_DISABLED:
-		#set_process(false)
-
-
-#func _process(_delta: float) -> void:
-	# NOTE: Remove this function if you don't plan on using billboard settings.
-	#rotate_area_to_billboard()
+	GameManager.leave_screen.connect(leave_screen)
 
 
 func _mouse_entered_area() -> void:
@@ -139,9 +132,11 @@ func rotate_area_to_billboard() -> void:
 		node_area.rotate_object_local(Vector3.BACK, camera.rotation.z)
 
 func interacted() -> void:
-	if is_using:
-		is_using = false
-		$CollisionShape3D.disabled = false
-	else:
-		is_using = true
-		$CollisionShape3D.disabled = true
+	is_using = true
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	$CollisionShape3D.disabled = true
+
+func leave_screen():
+	is_using = false
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$CollisionShape3D.disabled = false
