@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://2xg6fayhpxip" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.tscn" id="8_tipki"]
 [ext_resource type="PackedScene" uid="uid://b1wrqs80lndor" path="res://scenes/interactables/glass_box/glass_box.tscn" id="9_85g3d"]
 [ext_resource type="PackedScene" uid="uid://b2dg3sjguwemp" path="res://scenes/interactables/snack_holder/snack_holder.tscn" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://0lahvcxw20i5" path="res://scenes/interactables/food_box/food_box.tscn" id="12_eb6dy"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_tefeu"]
 vertices = PackedVector3Array(-5, 2, -20.5, -3, 2, -20.5, -3, 2, -49.5, -5.75, 2, -19.75, -49.5, 2, -49.5, -49.5, 2, -18.5, -5.75, 2, -18.25, 3.75, 2, -20.5, 3.75, 2, -49.5, 5.75, 2, -20.5, 6, 2, -19.5, 8.75, 2, -19.5, 9, 2, -20.5, 11, 2, -49.5, 11, 2, -20.5, 17.75, 2, -20.5, 17.75, 2, -49.5, 20.5, 2, -19.75, 20.5, 2, -17.75, 49.5, 2, -17.75, 19.75, 2, -20.5, 49.5, 2, -49.5, 9, 2, -18.25, 5.75, 2, -18.25, 3.5, 2, -5, 5.25, 2, -4.75, 3.75, 2, -18.25, 5.25, 2, -0.5, 4, 2, -0.25, 4, 2, 2.75, 18.25, 2, 2.75, 18.25, 2, -18.25, 19, 12, 4, 19.25, 12, 7, 19.5, 12, 4.25, 19.5, 12, 3.5, 19.5, 12, -19, 19, 12, 3.75, 20.75, 12, 4, -4.25, 12, 4, -4.25, 12, 3.75, -4.5, 12, -19, -5, 12, 3.5, -4.75, 12, 7, -49.5, 2, 6.5, -5.75, 2, 6.25, -3.5, 2, -2.75, -2, 2, -2.75, -1.75, 2, -5, -3.5, 2, -18.25, 20.5, 2, 2.75, 21.5, 2, 2.75, 21.75, 2, 4, 49.5, 2, 4, -1, 4.5, -1.25, -0.5, 4.5, -1.25, -0.25, 4.5, -3.25, -1, 4.5, -4, 3.5, 4.5, -3.25, 4.25, 4.5, -4, 3.75, 4.5, -1.25, 4.25, 4.5, -1.25, 2.75, 2, -0.5, 2.75, 2, -2.25, 0.5, 2, -2.25, 0.25, 2, -0.25, -3.5, 2, 2.75, -1.75, 2, -0.25, 21.5, 2, 5, 20.5, 2, 5, 20.5, 2, 7.75, 19.5, 2, 8, 19.5, 2, 49.5, 49.5, 2, 49.5, 18.25, 2, 7.75, 18.25, 2, 5, -3.5, 2, 5, -3.5, 2, 7.75, -4.75, 2, 8, -4.75, 2, 49.5, -5.75, 2, 7.75, -49.5, 2, 49.5)
@@ -50,6 +51,7 @@ sky_material = SubResource("ProceduralSkyMaterial_0wfyh")
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 2
 sky = SubResource("Sky_sugp2")
+ambient_light_sky_contribution = 0.1
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_afrgf"]
 size = Vector3(0.82141113, 1.3759155, 0.79711914)
@@ -76,6 +78,11 @@ mesh = SubResource("ArrayMesh_o6xl0")
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1379343943]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29290175, 5.2924995, -19.38712)
 size = Vector3(10, 9.585, 1)
+material = SubResource("StandardMaterial3D_tefeu")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1839597754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.438349, 9.584999, -8.084812)
+size = Vector3(24.290894, 1, 23.604614)
 material = SubResource("StandardMaterial3D_tefeu")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D" unique_id=1766224070]
@@ -107,7 +114,12 @@ material = SubResource("StandardMaterial3D_tefeu")
 environment = SubResource("Environment_jyhfs")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=1390376256]
-transform = Transform3D(0.99874395, -0.018660098, -0.04650052, 0.050104868, 0.3719531, 0.92689824, 0, -0.9280639, 0.37242088, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9248783, 0.3802633, 0, -0.3802633, 0.9248783, 0, 21.397038, 0)
+shadow_enabled = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="WorldEnvironment" unique_id=1804767989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.419378, 7.9914746, -7.6364675)
+omni_range = 25.0
 
 [node name="Player" parent="." unique_id=362338799 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7861516, 0)
@@ -154,3 +166,8 @@ displayName = "glass box"
 
 [node name="Snack_Holder" parent="." unique_id=378186162 instance=ExtResource("11_ya4ey")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.0288286, 2.5376632, -2.0786238)
+displayName = "food stand"
+
+[node name="food_Box" parent="." unique_id=780143687 instance=ExtResource("12_eb6dy")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.7370114, 0.50872827, -0.21181941)
+displayName = "food box"

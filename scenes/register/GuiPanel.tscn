@@ -12,6 +12,8 @@ viewport_path = NodePath("SubViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxpxu"]
 resource_local_to_scene = true
+shading_mode = 0
+albedo_color = Color(1.5561339, 1.5561339, 1.5561339, 1)
 albedo_texture = SubResource("ViewportTexture_p3tx3")
 
 [sub_resource type="QuadMesh" id="QuadMesh_x2pcn"]

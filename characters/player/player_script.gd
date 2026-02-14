@@ -18,6 +18,7 @@ func _ready() -> void:
 	GameManager.enter_screen.connect(move_camera)
 	GameManager.leave_screen.connect(reset_camera)
 	hide_glass_box()
+	hide_food_box()
 
 func _process(_delta: float) -> void:
 	show_interact_prompt()
@@ -84,3 +85,11 @@ func show_glass_box():
 func hide_glass_box():
 	%Glass_Box.hide()
 	glass_box_in_hand = false
+
+func show_food_box():
+	%food_Box.show()
+	food_box_in_hand = true
+
+func hide_food_box():
+	%food_Box.hide()
+	food_box_in_hand = false

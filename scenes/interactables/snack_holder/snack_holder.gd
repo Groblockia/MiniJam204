@@ -10,17 +10,28 @@ func _ready() -> void:
 	for i in $DonutContainer.get_children():
 		donuts.append(i)
 	position_donuts()
-	print(donuts)
-
-func _process(delta: float) -> void:
-	quantity = donuts.size()
-	if quantity >= 9: remove_donut(1)
-	print(quantity)
+	#print(donuts)
 
 func interacted() -> void:
+	print("caca")
 	if GameManager.food > 0:
 		GameManager.food -= 1
+		remove_donut(1)
+	if GameManager.player.food_box_in_hand == true:
+		add_donut(8 - quantity)
+		GameManager.player.hide_food_box()
+		GameManager.respawn_food_box.emit()
+
+
+func _process(_delta: float) -> void:
+	quantity = donuts.size()
+	if quantity >= 9: remove_donut(1)
+	#print(quantity)
 	
+	if Input.is_action_just_pressed("ui_up"):
+		add_donut(1)
+	if Input.is_action_just_pressed("ui_down"):
+		remove_donut(1)
 
 func remove_donut(x:int):
 	if quantity <= 0: return

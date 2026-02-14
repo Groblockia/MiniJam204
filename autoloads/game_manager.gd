@@ -6,6 +6,7 @@ signal enter_screen(pos, rot)
 signal leave_screen
 signal order_finished
 signal respawn_glass_box
+signal respawn_food_box
 
 var player
 var order_point
@@ -27,7 +28,7 @@ func _ready():
 	pass
 
 func _process(_delta: float) -> void:
-	if client_counter > 2:
+	if client_counter > 10:
 		is_finished = true
 
 ## starts the whole game logic
@@ -58,7 +59,7 @@ func _on_client_spawn_timer_timeout():
 func _start_ordering():
 	print("start ordering")
 	coffee = randi_range(1,3)
-	food = randi_range(0,0)
+	food = randi_range(1,3)
 	is_ordering = true
 
 func _is_order_finished():
@@ -78,3 +79,9 @@ func pick_up_glass_box():
 
 func _respawn_glass_box():
 	respawn_glass_box.emit()
+
+func pick_up_food_box():
+	player.show_food_box()
+
+func _respawn_food_box():
+	respawn_food_box.emit()

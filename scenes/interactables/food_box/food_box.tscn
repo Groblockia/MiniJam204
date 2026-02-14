@@ -1,0 +1,68 @@
+[gd_scene format=4 uid="uid://0lahvcxw20i5"]
+
+[ext_resource type="Texture2D" uid="uid://boxvec3ujra5q" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_BaseColor.1001.png" id="1_oyty0"]
+[ext_resource type="Script" uid="uid://b43skja2fjtur" path="res://scenes/interactables/food_box/food_box.gd" id="1_q2gm4"]
+[ext_resource type="Texture2D" uid="uid://y0s8a8j303wm" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Emissive.1001.png" id="2_wuggo"]
+[ext_resource type="Texture2D" uid="uid://db7npkoxrppjh" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Height.1001.png" id="3_2x3vg"]
+[ext_resource type="Texture2D" uid="uid://dbmflamhf5qb6" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Metallic.1001.png" id="4_w21qs"]
+[ext_resource type="Texture2D" uid="uid://dkv6aevwdifjn" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Normal.1001.png" id="5_qhpaw"]
+[ext_resource type="Texture2D" uid="uid://bj1pf8217qe6a" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Roughness.1001.png" id="6_2ghsj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4uw5v"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1np7u"]
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AACAvwAAgD8AAIC/AACAvwAAgD8AAIA/AACAvwAAgL8AAIA/AACAvwAAgL8AAIC/AACAPwAAgD8AAIC/AACAPwAAgL8AAIA/AACAPwAAgD8AAIA/AACAPwAAgL8AAIC/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_anat6"]
+resource_name = "Cube_005"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("qaoqMwAAgD+QUXoyrKoqP6mqqj6rqio/qqqqPgAAgD+36RMzqqoqP8dNHzKsqqo+qaqqPqqqqj6qqqo+qqoqP6yqqj4AAIA/q6qqPqyqKj+qqio/q6oqP6qqKj///38/rKqqPqqqKj+rqqo+rKqqPqqqKj+qqqo+q6oqP6qqKj8KlIgxAACAM6mqqj4AAIAzqqqqPqqqqj6NUfoyrKqqPqyqqj4AAIAzqqoqPwAAAACrqio/qqqqPq2qqj6qqqo+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_4uw5v"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AACAvwAAgD8AAIC/AACAvwAAgD8AAIA/AACAvwAAgL8AAIA/AACAvwAAgL8AAIC/AACAPwAAgD8AAIC/AACAvwAAgD8AAIC/AACAvwAAgL8AAIC/AACAPwAAgL8AAIC/AACAPwAAgD8AAIA/AACAPwAAgD8AAIC/AACAPwAAgL8AAIC/AACAPwAAgL8AAIA/AACAvwAAgD8AAIA/AACAPwAAgD8AAIA/AACAPwAAgL8AAIA/AACAvwAAgL8AAIA/AACAPwAAgL8AAIA/AACAPwAAgL8AAIC/AACAvwAAgL8AAIC/AACAvwAAgL8AAIA/AACAvwAAgD8AAIA/AACAvwAAgD8AAIC/AACAPwAAgD8AAIC/AACAPwAAgD8AAIA/AAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AID//////38AgP//////fwCA//////9/AID//////38AgP///3//fwCA////f/9/AID///9//38AgP///3//fwCA/3//f/9/AID/f/9//38AgP9//3//fwCA/3//f/9/AID/fwAA//////9/AAD//////38AAP//////fwAAAAD+//9//////////3///////v//f/////////9/////////")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_1np7u")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xfo63"]
+albedo_texture = ExtResource("1_oyty0")
+metallic = 1.0
+metallic_texture = ExtResource("4_w21qs")
+roughness_texture = ExtResource("6_2ghsj")
+emission_enabled = true
+emission_texture = ExtResource("2_wuggo")
+normal_enabled = true
+normal_texture = ExtResource("5_qhpaw")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_2x3vg")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q2gm4"]
+size = Vector3(0.7409668, 0.44830322, 1.1616821)
+
+[node name="food_Box" type="Area3D" unique_id=780143687]
+script = ExtResource("1_q2gm4")
+
+[node name="Carton_Glass" type="MeshInstance3D" parent="." unique_id=802348554]
+transform = Transform3D(0.37216592, 0, 0, 0, 0.22095503, 0, 0, 0, 0.5766775, 0, 0.21691194, 0)
+mesh = SubResource("ArrayMesh_anat6")
+surface_material_override/0 = SubResource("StandardMaterial3D_xfo63")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1503590357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0008544922, 0.21542358, 0.0013122559)
+shape = SubResource("BoxShape3D_q2gm4")
