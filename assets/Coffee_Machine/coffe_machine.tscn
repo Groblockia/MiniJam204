@@ -111,7 +111,7 @@ heightmap_texture = ExtResource("33_c0q7g")
 
 [node name="Coffe_Machine" unique_id=463634666 instance=ExtResource("1_anech")]
 
-[node name="Coffe_Machine" parent="." index="0" unique_id=2144354846]
+[node name="Coffe_Machine" parent="." index="0" unique_id=1684617526]
 surface_material_override/0 = SubResource("StandardMaterial3D_vl5o7")
 surface_material_override/1 = SubResource("StandardMaterial3D_iq7fq")
 surface_material_override/2 = SubResource("StandardMaterial3D_nncqd")

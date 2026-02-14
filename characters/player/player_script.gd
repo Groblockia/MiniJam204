@@ -11,7 +11,7 @@ var input_dir
 var direction
 
 func _ready() -> void:
-	print("oe c greg")
+	GameManager.player = self
 
 func _process(_delta: float) -> void:
 	show_interact_prompt()
@@ -52,7 +52,7 @@ func send_interact():
 
 func show_interact_prompt():
 	var col = aim_raycast.get_collider()
-	if col is Interactable:
+	if col is Interactable && Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		%InteractLabel.text = col.displayName
 		%InteractLabel.position = %Camera.unproject_position(col.position)
 		%InteractLabel.show()

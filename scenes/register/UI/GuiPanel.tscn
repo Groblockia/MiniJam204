@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dncyona1wwo7t"]
+
+[ext_resource type="Script" uid="uid://btmurl6hr70wb" path="res://scenes/register/UI/gui_panel.gd" id="1_kkv0r"]
+[ext_resource type="PackedScene" uid="uid://mrtd5mmlpikj" path="res://scenes/register/UI/register_ui.tscn" id="2_p3tx3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xsa4e"]
+size = Vector3(1, 1, 0.21636963)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_p3tx3"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxpxu"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_p3tx3")
+
+[sub_resource type="QuadMesh" id="QuadMesh_x2pcn"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_qxpxu")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p3tx3"]
+size = Vector3(1, 1, 0.0043640137)
+
+[node name="GuiPanel" type="Area3D" unique_id=1445039458]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_kkv0r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=636814915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.002532959)
+shape = SubResource("BoxShape3D_xsa4e")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1926952940]
+
+[node name="Register_ui" parent="SubViewport" unique_id=868736794 instance=ExtResource("2_p3tx3")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=283633870]
+mesh = SubResource("QuadMesh_x2pcn")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=988054875]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1202598257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0061798096)
+shape = SubResource("BoxShape3D_p3tx3")

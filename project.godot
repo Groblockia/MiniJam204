@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 
 InteractionManager="*uid://brik3c1muulba"
 Debug="*uid://pvyyremmlo73"
-ClientOrderingSystem="*uid://bjiqep6vksthw"
+GameManager="*uid://cnrtjf1irahql"
 
 [input]
 
@@ -59,8 +59,8 @@ interact={
 3d_physics/layer_1="world"
 3d_physics/layer_2="player"
 3d_physics/layer_3="interactable"
-3d_physics/layer_4="enemies"
-3d_physics/layer_5="misc"
+3d_physics/layer_4="npc"
+3d_physics/layer_5="enemies"
 
 [physics]
 

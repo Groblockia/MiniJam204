@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://doh15lorakjr8"]
+
+[ext_resource type="PackedScene" uid="uid://bvhsxxpxj17ks" path="res://assets/customer_animated/Customer_Walk_Animationwithmesh.fbx" id="1_3gugt"]
+
+[node name="customer_animated" unique_id=536684288 instance=ExtResource("1_3gugt")]

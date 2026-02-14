@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://mcgarv44ofi6"]
+
+[ext_resource type="Script" uid="uid://dv8bxgyxprp3e" path="res://scenes/interactables/coffee_machine/coffee_machine.gd" id="1_d04mg"]
+[ext_resource type="PackedScene" uid="uid://cborq3fvjwdek" path="res://assets/coffee_machine/coffe_machine.tscn" id="1_ltfva"]
+[ext_resource type="PackedScene" uid="uid://bv10foqbxrevj" path="res://assets/glass_holder/glass_holder.tscn" id="3_d04mg"]
+[ext_resource type="PackedScene" uid="uid://uhs7bowdv7c" path="res://assets/glass/glass.tscn" id="4_wmnfb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_afrgf"]
+size = Vector3(0.82141113, 1.3759155, 0.79711914)
+
+[node name="coffee_machine" type="StaticBody3D" unique_id=1980926070]
+script = ExtResource("1_d04mg")
+
+[node name="mesh" parent="." unique_id=463634666 instance=ExtResource("1_ltfva")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1026797602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00592041, 0.06484985, -0.33898926)
+shape = SubResource("BoxShape3D_afrgf")
+
+[node name="Glass_Holder" parent="." unique_id=135483045 instance=ExtResource("3_d04mg")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.86826104, -0.6348482, -0.5091318)
+
+[node name="Glass" parent="." unique_id=1358902145 instance=ExtResource("4_wmnfb")]
+transform = Transform3D(1, 0, 0, 0, 0.4430555, 0.8964942, 0, -0.8964942, 0.4430555, -0.86397254, -0.43056178, 0.039247543)
+
+[node name="Glass2" parent="." unique_id=811649794 instance=ExtResource("4_wmnfb")]
+transform = Transform3D(1, 0, 0, 0, 0.4430555, 0.8964942, 0, -0.8964942, 0.4430555, -0.86397254, -0.3873217, -0.073974475)
+
+[node name="Glass3" parent="." unique_id=1419427969 instance=ExtResource("4_wmnfb")]
+transform = Transform3D(1, 0, 0, 0, 0.4430555, 0.8964942, 0, -0.8964942, 0.4430555, -0.86397254, -0.34111223, -0.1967142)
+
+[node name="Glass4" parent="." unique_id=2059804489 instance=ExtResource("4_wmnfb")]
+transform = Transform3D(1, 0, 0, 0, 0.4430555, 0.8964942, 0, -0.8964942, 0.4430555, -0.86397254, -0.27933073, -0.36579317)
+
+[node name="Glass5" parent="." unique_id=1302379532 instance=ExtResource("4_wmnfb")]
+transform = Transform3D(1, 0, 0, 0, 0.4430555, 0.8964942, 0, -0.8964942, 0.4430555, -0.86397254, -0.20599756, -0.5515944)

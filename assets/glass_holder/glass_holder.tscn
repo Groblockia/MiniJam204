@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bv10foqbxrevj"]
+
+[ext_resource type="PackedScene" uid="uid://dv2y1y6oist4r" path="res://assets/glass_holder/Glass_Holder.fbx" id="1_olbp1"]
+[ext_resource type="Texture2D" uid="uid://q1hi01y8xyvc" path="res://assets/glass_holder/Glass_Holder_M_Base_BaseColor.1001.png" id="2_pxgxh"]
+[ext_resource type="Texture2D" uid="uid://cojnhucu368sm" path="res://assets/glass_holder/Glass_Holder_M_Base_Emissive.1001.png" id="3_atoj4"]
+[ext_resource type="Texture2D" uid="uid://eqa401ohpsfh" path="res://assets/glass_holder/Glass_Holder_M_Base_Height.1001.png" id="4_xt0ry"]
+[ext_resource type="Texture2D" uid="uid://iw152pspckku" path="res://assets/glass_holder/Glass_Holder_M_Base_Metallic.1001.png" id="5_k2tm2"]
+[ext_resource type="Texture2D" uid="uid://b150hgb5mrlkb" path="res://assets/glass_holder/Glass_Holder_M_Base_Normal.1001.png" id="6_d3rky"]
+[ext_resource type="Texture2D" uid="uid://bomk3lyx52itl" path="res://assets/glass_holder/Glass_Holder_M_Base_Roughness.1001.png" id="7_ubnas"]
+[ext_resource type="Texture2D" uid="uid://de4xwupq6dck7" path="res://assets/glass_holder/Glass_Holder_M_Holder_BaseColor.1001.png" id="8_g05yk"]
+[ext_resource type="Texture2D" uid="uid://blavq4ii0jrtl" path="res://assets/glass_holder/Glass_Holder_M_Holder_Emissive.1001.png" id="9_ox2rs"]
+[ext_resource type="Texture2D" uid="uid://dfkoqva42gvu2" path="res://assets/glass_holder/Glass_Holder_M_Holder_Height.1001.png" id="10_7dvtp"]
+[ext_resource type="Texture2D" uid="uid://r2xm2xuwlid" path="res://assets/glass_holder/Glass_Holder_M_Holder_Metallic.1001.png" id="11_he1lf"]
+[ext_resource type="Texture2D" uid="uid://c5pqq5rintaoq" path="res://assets/glass_holder/Glass_Holder_M_Holder_Normal.1001.png" id="12_b87jr"]
+[ext_resource type="Texture2D" uid="uid://d1778tl78ftqm" path="res://assets/glass_holder/Glass_Holder_M_Holder_Roughness.1001.png" id="13_bhhi8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2fcwp"]
+albedo_texture = ExtResource("2_pxgxh")
+metallic = 1.0
+metallic_texture = ExtResource("5_k2tm2")
+roughness_texture = ExtResource("7_ubnas")
+emission_enabled = true
+emission_texture = ExtResource("3_atoj4")
+normal_enabled = true
+normal_texture = ExtResource("6_d3rky")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_xt0ry")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mw2m"]
+albedo_texture = ExtResource("8_g05yk")
+metallic = 1.0
+metallic_texture = ExtResource("11_he1lf")
+roughness_texture = ExtResource("13_bhhi8")
+emission_enabled = true
+emission_texture = ExtResource("9_ox2rs")
+normal_enabled = true
+normal_texture = ExtResource("12_b87jr")
+heightmap_enabled = true
+heightmap_texture = ExtResource("10_7dvtp")
+
+[node name="Glass_Holder" unique_id=135483045 instance=ExtResource("1_olbp1")]
+
+[node name="Cube" parent="." index="0" unique_id=979292061]
+surface_material_override/0 = SubResource("StandardMaterial3D_2fcwp")
+surface_material_override/1 = SubResource("StandardMaterial3D_4mw2m")
