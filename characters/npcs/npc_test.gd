@@ -22,10 +22,10 @@ func _process(delta: float) -> void:
 	else:
 		velocity = Vector3(0, velocity.y, 0)
 	
-	if velocity != Vector3.ZERO:
-		%AnimationPlayer.play("walking")
-	else:
-		%AnimationPlayer.play("RESET")
+	#if velocity != Vector3.ZERO:
+		#%AnimationPlayer.play("walking")
+	#else:
+		#%AnimationPlayer.play("RESET")
 
 func move_to_target(delta:float) -> void:
 	var current_pos = global_position

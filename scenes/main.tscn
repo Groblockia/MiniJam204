@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://mcgarv44ofi6" path="res://scenes/interactables/coffee_machine/coffee_machine.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://dncyona1wwo7t" path="res://scenes/register/GuiPanel.tscn" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bo63awfqmywkj" path="res://scenes/interactables/button/button.tscn" id="7_tipki"]
-[ext_resource type="PackedScene" uid="uid://2xg6fayhpxip" path="res://scenes/glass_holder_scripted/glass_holder_scripted.tscn" id="8_tipki"]
+[ext_resource type="PackedScene" uid="uid://2xg6fayhpxip" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.tscn" id="8_tipki"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_tefeu"]
 vertices = PackedVector3Array(-5, 2, -20.5, -3, 2, -20.5, -3, 2, -49.5, -5.75, 2, -19.75, -49.5, 2, -49.5, -49.5, 2, -18.5, -5.75, 2, -18.25, 3.75, 2, -20.5, 3.75, 2, -49.5, 5.75, 2, -20.5, 6, 2, -19.5, 8.75, 2, -19.5, 9, 2, -20.5, 11, 2, -49.5, 11, 2, -20.5, 17.75, 2, -20.5, 17.75, 2, -49.5, 20.5, 2, -19.75, 20.5, 2, -17.75, 49.5, 2, -17.75, 19.75, 2, -20.5, 49.5, 2, -49.5, 9, 2, -18.25, 5.75, 2, -18.25, 3.5, 2, -5, 5.25, 2, -4.75, 3.75, 2, -18.25, 5.25, 2, -0.5, 4, 2, -0.25, 4, 2, 2.75, 18.25, 2, 2.75, 18.25, 2, -18.25, 19, 12, 4, 19.25, 12, 7, 19.5, 12, 4.25, 19.5, 12, 3.5, 19.5, 12, -19, 19, 12, 3.75, 20.75, 12, 4, -4.25, 12, 4, -4.25, 12, 3.75, -4.5, 12, -19, -5, 12, 3.5, -4.75, 12, 7, -49.5, 2, 6.5, -5.75, 2, 6.25, -3.5, 2, -2.75, -2, 2, -2.75, -1.75, 2, -5, -3.5, 2, -18.25, 20.5, 2, 2.75, 21.5, 2, 2.75, 21.75, 2, 4, 49.5, 2, 4, -1, 4.5, -1.25, -0.5, 4.5, -1.25, -0.25, 4.5, -3.25, -1, 4.5, -4, 3.5, 4.5, -3.25, 4.25, 4.5, -4, 3.75, 4.5, -1.25, 4.25, 4.5, -1.25, 2.75, 2, -0.5, 2.75, 2, -2.25, 0.5, 2, -2.25, 0.25, 2, -0.25, -3.5, 2, 2.75, -1.75, 2, -0.25, 21.5, 2, 5, 20.5, 2, 5, 20.5, 2, 7.75, 19.5, 2, 8, 19.5, 2, 49.5, 49.5, 2, 49.5, 18.25, 2, 7.75, 18.25, 2, 5, -3.5, 2, 5, -3.5, 2, 7.75, -4.75, 2, 8, -4.75, 2, 49.5, -5.75, 2, 7.75, -49.5, 2, 49.5)
@@ -130,4 +130,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5427356, 2.587063, -3.62799
 displayName = "Interact to enter screen"
 
 [node name="glass_holder_scripted" parent="." unique_id=1983153162 instance=ExtResource("8_tipki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8975853, 2.5424402, -1.3489299)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8975853, 2.4975476, -1.3489299)
