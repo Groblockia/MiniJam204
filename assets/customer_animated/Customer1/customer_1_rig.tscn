@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://dy46p5ng2syu5"]
-
-[ext_resource type="PackedScene" uid="uid://c8wskcemvosm6" path="res://assets/customer_animated/Customer1/Customer1rig.fbx" id="1_ndfrr"]
-
-[node name="Customer1rig" unique_id=1103770693 instance=ExtResource("1_ndfrr")]
