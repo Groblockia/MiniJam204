@@ -21,6 +21,12 @@ InteractionManager="*uid://brik3c1muulba"
 Debug="*uid://pvyyremmlo73"
 GameManager="*uid://cnrtjf1irahql"
 
+[file_customization]
+
+folder_colors={
+"res://scenes/": "green"
+}
+
 [input]
 
 left={

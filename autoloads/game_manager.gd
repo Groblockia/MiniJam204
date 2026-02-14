@@ -5,6 +5,7 @@ extends Node
 signal enter_screen(pos, rot)
 signal leave_screen
 signal order_finished
+signal respawn_glass_box
 
 var player
 var order_point
@@ -71,3 +72,9 @@ func enter_register_screen():
 
 func leave_register_screen():
 	leave_screen.emit()
+
+func pick_up_glass_box():
+	player.show_glass_box()
+
+func _respawn_glass_box():
+	respawn_glass_box.emit()

@@ -2,11 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dv8bxgyxprp3e" path="res://scenes/interactables/coffee_machine/coffee_machine.gd" id="1_d04mg"]
 [ext_resource type="PackedScene" uid="uid://cborq3fvjwdek" path="res://assets/coffee_machine/coffe_machine.tscn" id="1_ltfva"]
+[ext_resource type="PackedScene" uid="uid://2xg6fayhpxip" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.tscn" id="3_pmk27"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_afrgf"]
 size = Vector3(0.82141113, 1.3759155, 0.79711914)
 
 [node name="coffee_machine" type="StaticBody3D" unique_id=1980926070]
+collision_layer = 4
+collision_mask = 0
 script = ExtResource("1_d04mg")
 
 [node name="mesh" parent="." unique_id=463634666 instance=ExtResource("1_ltfva")]
@@ -14,3 +17,6 @@ script = ExtResource("1_d04mg")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1026797602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00592041, 0.06484985, -0.33898926)
 shape = SubResource("BoxShape3D_afrgf")
+
+[node name="glass_holder_scripted" parent="." unique_id=1731970028 instance=ExtResource("3_pmk27")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.7759547, -0.63367605, -0.5500121)

@@ -4,7 +4,12 @@
 [ext_resource type="Script" uid="uid://dfy1siqt332ng" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.gd" id="1_k0lrv"]
 [ext_resource type="PackedScene" uid="uid://uhs7bowdv7c" path="res://assets/glass/glass.tscn" id="2_02kvt"]
 
-[node name="glass_holder_scripted" type="Node3D" unique_id=1983153162]
+[sub_resource type="BoxShape3D" id="BoxShape3D_bt2el"]
+size = Vector3(1.1220703, 0.49145508, 0.29663086)
+
+[node name="glass_holder_scripted" type="Area3D" unique_id=1731970028]
+collision_layer = 4
+collision_mask = 0
 script = ExtResource("1_k0lrv")
 
 [node name="Glass_Holder" parent="." unique_id=135483045 instance=ExtResource("1_3bf6o")]
@@ -14,14 +19,6 @@ script = ExtResource("1_k0lrv")
 [node name="Glass" parent="GlassContainer" unique_id=1358902145 instance=ExtResource("2_02kvt")]
 transform = Transform3D(0.46440926, -0.8856207, 0, 0.8856207, 0.46440926, 0, 0, 0, 1, 0.55, 0.2, 0)
 
-[node name="Glass2" parent="GlassContainer" unique_id=1675379056 instance=ExtResource("2_02kvt")]
-transform = Transform3D(0.46440926, -0.8856207, 0, 0.8856207, 0.46440926, 0, 0, 0, 1, 0.55, 0.2, 0)
-
-[node name="Glass3" parent="GlassContainer" unique_id=1609548404 instance=ExtResource("2_02kvt")]
-transform = Transform3D(0.46440926, -0.8856207, 0, 0.8856207, 0.46440926, 0, 0, 0, 1, 0.55, 0.2, 0)
-
-[node name="Glass4" parent="GlassContainer" unique_id=1108736692 instance=ExtResource("2_02kvt")]
-transform = Transform3D(0.46440926, -0.8856207, 0, 0.8856207, 0.46440926, 0, 0, 0, 1, 0.55, 0.2, 0)
-
-[node name="Glass5" parent="GlassContainer" unique_id=1631233990 instance=ExtResource("2_02kvt")]
-transform = Transform3D(0.46440926, -0.8856207, 0, 0.8856207, 0.46440926, 0, 0, 0, 1, 0.55, 0.2, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1645971330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114746094, 0.24890137, -0.00061035156)
+shape = SubResource("BoxShape3D_bt2el")

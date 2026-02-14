@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dcr7w83srimyc" path="res://characters/player/player_script.gd" id="1_508ok"]
 [ext_resource type="Script" uid="uid://beynbd1f5ie6j" path="res://characters/player/head.gd" id="2_xxgcw"]
+[ext_resource type="PackedScene" uid="uid://dvmitxx7rn07q" path="res://assets/Box_Glass/glass_box.tscn" id="3_exd8k"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_508ok"]
 height = 4.0
@@ -33,6 +34,14 @@ unique_name_in_owner = true
 target_position = Vector3(0, 0, -3)
 collision_mask = 5
 collide_with_areas = true
+
+[node name="ItemPickupMarker" type="Marker3D" parent="Head/Camera" unique_id=1215279220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="Glass_Box" parent="Head/Camera" unique_id=509422325 instance=ExtResource("3_exd8k")]
+unique_name_in_owner = true
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.17302132, -1, -1.1511328)
+visible = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=524335615]
 

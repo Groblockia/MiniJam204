@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dyts8vdasw8bk"]
+
+[ext_resource type="PackedScene" uid="uid://b4u3ty76tlibn" path="res://assets/Snack_Holder/Snack_Holder.fbx" id="1_v7r6i"]
+[ext_resource type="Texture2D" uid="uid://baylggf363kko" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_BaseColor.1001.png" id="2_4xrlf"]
+[ext_resource type="Texture2D" uid="uid://bn30a5hft13e7" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Emissive.1001.png" id="3_y7gcj"]
+[ext_resource type="Texture2D" uid="uid://cg1xevifbsh6u" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Height.1001.png" id="4_owkqn"]
+[ext_resource type="Texture2D" uid="uid://dbsinl5emxxy2" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Metallic.1001.png" id="5_eq7hg"]
+[ext_resource type="Texture2D" uid="uid://dxehjmdcllnmf" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Normal.1001.png" id="6_mds0s"]
+[ext_resource type="Texture2D" uid="uid://byqghmp8m7une" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Roughness.1001.png" id="7_jcqwa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_an5kt"]
+albedo_texture = ExtResource("2_4xrlf")
+metallic = 1.0
+metallic_texture = ExtResource("5_eq7hg")
+roughness_texture = ExtResource("7_jcqwa")
+emission_enabled = true
+emission_texture = ExtResource("3_y7gcj")
+normal_enabled = true
+normal_texture = ExtResource("6_mds0s")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_owkqn")
+
+[node name="Snack_Holder" unique_id=378186162 instance=ExtResource("1_v7r6i")]
+
+[node name="Cube_001" parent="." index="0" unique_id=1143330840]
+surface_material_override/0 = SubResource("StandardMaterial3D_an5kt")

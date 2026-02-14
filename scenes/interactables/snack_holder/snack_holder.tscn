@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://b2dg3sjguwemp"]
+
+[ext_resource type="PackedScene" uid="uid://b4u3ty76tlibn" path="res://assets/Snack_Holder/Snack_Holder.fbx" id="1_ktkda"]
+[ext_resource type="Script" uid="uid://b87dfserqwtl4" path="res://scenes/interactables/snack_holder/snack_holder.gd" id="2_1qppf"]
+[ext_resource type="Texture2D" uid="uid://baylggf363kko" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_BaseColor.1001.png" id="2_5kmup"]
+[ext_resource type="Texture2D" uid="uid://bn30a5hft13e7" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Emissive.1001.png" id="3_548wn"]
+[ext_resource type="Texture2D" uid="uid://cg1xevifbsh6u" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Height.1001.png" id="4_rdi37"]
+[ext_resource type="Texture2D" uid="uid://dbsinl5emxxy2" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Metallic.1001.png" id="5_or088"]
+[ext_resource type="Texture2D" uid="uid://dxehjmdcllnmf" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Normal.1001.png" id="6_k3eog"]
+[ext_resource type="Texture2D" uid="uid://byqghmp8m7une" path="res://assets/Snack_Holder/Snack_Holder_DefaultMaterial_Roughness.1001.png" id="7_t5r1a"]
+[ext_resource type="PackedScene" uid="uid://muwiaiw87ddb" path="res://assets/Donuts/donuts.tscn" id="9_0c4k8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_an5kt"]
+albedo_texture = ExtResource("2_5kmup")
+metallic = 1.0
+metallic_texture = ExtResource("5_or088")
+roughness_texture = ExtResource("7_t5r1a")
+emission_enabled = true
+emission_texture = ExtResource("3_548wn")
+normal_enabled = true
+normal_texture = ExtResource("6_k3eog")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_rdi37")
+
+[node name="Snack_Holder" unique_id=378186162 instance=ExtResource("1_ktkda")]
+script = ExtResource("2_1qppf")
+
+[node name="Cube_001" parent="." index="0" unique_id=1143330840]
+surface_material_override/0 = SubResource("StandardMaterial3D_an5kt")
+
+[node name="DonutContainer" type="Node3D" parent="." index="1" unique_id=400963199]
+
+[node name="Donuts1" parent="DonutContainer" index="0" unique_id=388894578 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.25, 0.5, -0.35)
+
+[node name="Donuts2" parent="DonutContainer" index="1" unique_id=1825377213 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.25, 0.5, -0.35)
+
+[node name="Donuts3" parent="DonutContainer" index="2" unique_id=762568667 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.25, 0.5, 0)
+
+[node name="Donuts4" parent="DonutContainer" index="3" unique_id=1600390001 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.25, 0.5, 0)
+
+[node name="Donuts5" parent="DonutContainer" index="4" unique_id=239219276 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.25, -0.25, -0.18437666)
+
+[node name="Donuts6" parent="DonutContainer" index="5" unique_id=1057397320 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.25, -0.25, -0.18437666)
+
+[node name="Donuts7" parent="DonutContainer" index="6" unique_id=1943644618 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.25, -0.25, 0.16562334)
+
+[node name="Donuts8" parent="DonutContainer" index="7" unique_id=434620047 instance=ExtResource("9_0c4k8")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.25, -0.25, 0.16562334)

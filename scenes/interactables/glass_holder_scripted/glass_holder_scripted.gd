@@ -1,4 +1,4 @@
-extends Node3D
+extends Interactable
 
 @onready var glass = preload("res://assets/glass/glass.tscn")
 @onready var container = $GlassContainer
@@ -11,15 +11,20 @@ func _ready() -> void:
 		glasses.append(i)
 	position_glasses()
 
+func interacted() -> void:
+	if GameManager.player.glass_box_in_hand == true:
+		add_glass(5 - quantity)
+		GameManager.player.hide_glass_box()
+		GameManager.respawn_glass_box.emit()
+
 func _process(_delta: float) -> void:
 	quantity = glasses.size()
 	if quantity >= 6: remove_glass(1)
-	print(quantity)
 	
 	if Input.is_action_just_pressed("ui_up"):
-		add_glass(2)
+		add_glass(1)
 	if Input.is_action_just_pressed("ui_down"):
-		remove_glass(2)
+		remove_glass(1)
 
 func remove_glass(x: int):
 	if quantity <= 0: return

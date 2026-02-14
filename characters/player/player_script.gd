@@ -10,16 +10,21 @@ class_name Player
 var input_dir
 var direction
 
+var glass_box_in_hand := false
+var food_box_in_hand := false
+
 func _ready() -> void:
 	GameManager.player = self
 	GameManager.enter_screen.connect(move_camera)
 	GameManager.leave_screen.connect(reset_camera)
+	hide_glass_box()
 
 func _process(_delta: float) -> void:
 	show_interact_prompt()
 	%Label.text = "number of clients = %d, can spawn = %s" % [GameManager.client_counter, GameManager.can_spawn]
 
 func _physics_process(delta: float) -> void:
+	
 	# movement code
 	if player_can_move:
 		input_dir = (Input.get_vector("left", "right", "forward", "backward"))
@@ -71,3 +76,11 @@ func reset_camera():
 	player_can_move = true
 	%Camera.position = Vector3(0,0,0)
 	%Camera.rotation = Vector3(0,0,0)
+
+func show_glass_box():
+	%Glass_Box.show()
+	glass_box_in_hand = true
+
+func hide_glass_box():
+	%Glass_Box.hide()
+	glass_box_in_hand = false

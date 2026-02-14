@@ -4,10 +4,13 @@
 [ext_resource type="Script" uid="uid://ba31adpclufx5" path="res://scenes/main.gd" id="1_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://dcssat7fkjr2t" path="res://characters/player/player.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://7jlhrdlwjita" path="res://assets/counter/counter.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://mcgarv44ofi6" path="res://scenes/interactables/coffee_machine/coffee_machine.tscn" id="6_tefeu"]
+[ext_resource type="Script" uid="uid://dv8bxgyxprp3e" path="res://scenes/interactables/coffee_machine/coffee_machine.gd" id="6_choun"]
 [ext_resource type="PackedScene" uid="uid://dncyona1wwo7t" path="res://scenes/register/GuiPanel.tscn" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bo63awfqmywkj" path="res://scenes/interactables/button/button.tscn" id="7_tipki"]
+[ext_resource type="PackedScene" uid="uid://cborq3fvjwdek" path="res://assets/coffee_machine/coffe_machine.tscn" id="7_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://2xg6fayhpxip" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.tscn" id="8_tipki"]
+[ext_resource type="PackedScene" uid="uid://b1wrqs80lndor" path="res://scenes/interactables/glass_box/glass_box.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://b2dg3sjguwemp" path="res://scenes/interactables/snack_holder/snack_holder.tscn" id="11_ya4ey"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_tefeu"]
 vertices = PackedVector3Array(-5, 2, -20.5, -3, 2, -20.5, -3, 2, -49.5, -5.75, 2, -19.75, -49.5, 2, -49.5, -49.5, 2, -18.5, -5.75, 2, -18.25, 3.75, 2, -20.5, 3.75, 2, -49.5, 5.75, 2, -20.5, 6, 2, -19.5, 8.75, 2, -19.5, 9, 2, -20.5, 11, 2, -49.5, 11, 2, -20.5, 17.75, 2, -20.5, 17.75, 2, -49.5, 20.5, 2, -19.75, 20.5, 2, -17.75, 49.5, 2, -17.75, 19.75, 2, -20.5, 49.5, 2, -49.5, 9, 2, -18.25, 5.75, 2, -18.25, 3.5, 2, -5, 5.25, 2, -4.75, 3.75, 2, -18.25, 5.25, 2, -0.5, 4, 2, -0.25, 4, 2, 2.75, 18.25, 2, 2.75, 18.25, 2, -18.25, 19, 12, 4, 19.25, 12, 7, 19.5, 12, 4.25, 19.5, 12, 3.5, 19.5, 12, -19, 19, 12, 3.75, 20.75, 12, 4, -4.25, 12, 4, -4.25, 12, 3.75, -4.5, 12, -19, -5, 12, 3.5, -4.75, 12, 7, -49.5, 2, 6.5, -5.75, 2, 6.25, -3.5, 2, -2.75, -2, 2, -2.75, -1.75, 2, -5, -3.5, 2, -18.25, 20.5, 2, 2.75, 21.5, 2, 2.75, 21.75, 2, 4, 49.5, 2, 4, -1, 4.5, -1.25, -0.5, 4.5, -1.25, -0.25, 4.5, -3.25, -1, 4.5, -4, 3.5, 4.5, -3.25, 4.25, 4.5, -4, 3.75, 4.5, -1.25, 4.25, 4.5, -1.25, 2.75, 2, -0.5, 2.75, 2, -2.25, 0.5, 2, -2.25, 0.25, 2, -0.25, -3.5, 2, 2.75, -1.75, 2, -0.25, 21.5, 2, 5, 20.5, 2, 5, 20.5, 2, 7.75, 19.5, 2, 8, 19.5, 2, 49.5, 49.5, 2, 49.5, 18.25, 2, 7.75, 18.25, 2, 5, -3.5, 2, 5, -3.5, 2, 7.75, -4.75, 2, 8, -4.75, 2, 49.5, -5.75, 2, 7.75, -49.5, 2, 49.5)
@@ -47,6 +50,9 @@ sky_material = SubResource("ProceduralSkyMaterial_0wfyh")
 [sub_resource type="Environment" id="Environment_jyhfs"]
 background_mode = 2
 sky = SubResource("Sky_sugp2")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_afrgf"]
+size = Vector3(0.82141113, 1.3759155, 0.79711914)
 
 [node name="main" type="Node3D" unique_id=1111915395]
 script = ExtResource("1_o6xl0")
@@ -121,13 +127,30 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5719814, 1.8, -25.04468)
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.255849, 4.4388905, 2.9832194)
 displayName = "start game button"
 
-[node name="coffee_machine" parent="." unique_id=1541205481 instance=ExtResource("6_tefeu")]
+[node name="coffee_machine" type="StaticBody3D" parent="." unique_id=1541205481]
 transform = Transform3D(-4.371138e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.371138e-08, -0.36571145, 3.123108, -2.5263183)
-displayName = "Coffe machine"
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("6_choun")
+displayName = "Coffee machine"
+
+[node name="mesh" parent="coffee_machine" unique_id=463634666 instance=ExtResource("7_ya4ey")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="coffee_machine" unique_id=1026797602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00592041, 0.06484985, -0.33898926)
+shape = SubResource("BoxShape3D_afrgf")
+
+[node name="glass_holder_scripted" parent="coffee_machine" unique_id=1731970028 instance=ExtResource("8_tipki")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.7759547, -0.63367605, -0.5500121)
+displayName = "glass holder"
 
 [node name="GuiPanel" parent="." unique_id=1445039458 instance=ExtResource("7_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5427356, 2.587063, -3.6279943)
 displayName = "Interact to enter screen"
 
-[node name="glass_holder_scripted" parent="." unique_id=1983153162 instance=ExtResource("8_tipki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8975853, 2.4975476, -1.3489299)
+[node name="Glass_Box" parent="." unique_id=1703922067 instance=ExtResource("9_85g3d")]
+transform = Transform3D(0.25792542, 0, -0.9661648, 0, 1, 0, 0.9661648, 0, 0.25792542, 4.806553, 0.7649325, 1.8228841)
+displayName = "glass box"
+
+[node name="Snack_Holder" parent="." unique_id=378186162 instance=ExtResource("11_ya4ey")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.0288286, 2.5376632, -2.0786238)
