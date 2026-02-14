@@ -12,9 +12,12 @@ var direction
 
 func _ready() -> void:
 	GameManager.player = self
+	GameManager.enter_screen.connect(move_camera)
+	GameManager.leave_screen.connect(reset_camera)
 
 func _process(_delta: float) -> void:
 	show_interact_prompt()
+	%Label.text = "number of clients = %d, can spawn = %s" % [GameManager.client_counter, GameManager.can_spawn]
 
 func _physics_process(delta: float) -> void:
 	# movement code
@@ -52,9 +55,19 @@ func send_interact():
 
 func show_interact_prompt():
 	var col = aim_raycast.get_collider()
-	if col is Interactable && Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+	if col is Interactable:
 		%InteractLabel.text = col.displayName
 		%InteractLabel.position = %Camera.unproject_position(col.position)
 		%InteractLabel.show()
 	else:
 		%InteractLabel.hide()
+
+func move_camera(pos: Vector3, rot: Vector3):
+	player_can_move = false
+	%Camera.global_position = pos
+	%Camera.global_rotation = rot
+
+func reset_camera():
+	player_can_move = true
+	%Camera.position = Vector3(0,0,0)
+	%Camera.rotation = Vector3(0,0,0)

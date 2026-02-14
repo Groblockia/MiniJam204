@@ -1,4 +1,5 @@
 extends Interactable
 
 func interacted() -> void:
-	print("c starbucks bebe")
+	if GameManager.coffee > 0:
+		GameManager.coffee -= 1

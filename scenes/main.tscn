@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://ba31adpclufx5" path="res://scenes/main.gd" id="1_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://dcssat7fkjr2t" path="res://characters/player/player.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://7jlhrdlwjita" path="res://assets/counter/counter.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://dncyona1wwo7t" path="res://scenes/register/UI/GuiPanel.tscn" id="4_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://mcgarv44ofi6" path="res://scenes/interactables/coffee_machine/coffee_machine.tscn" id="6_tefeu"]
+[ext_resource type="PackedScene" uid="uid://dncyona1wwo7t" path="res://scenes/register/GuiPanel.tscn" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bo63awfqmywkj" path="res://scenes/interactables/button/button.tscn" id="7_tipki"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_tefeu"]
@@ -124,6 +124,6 @@ displayName = "start game button"
 transform = Transform3D(-4.371138e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.371138e-08, -0.36571145, 3.123108, -2.5263183)
 displayName = "Coffe machine"
 
-[node name="GuiPanel" parent="." unique_id=1826651836 instance=ExtResource("4_o6xl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5935519, 3.1929736, -3.5348952)
-displayName = "caca"
+[node name="GuiPanel" parent="." unique_id=1445039458 instance=ExtResource("7_o6xl0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5427356, 2.587063, -3.6279943)
+displayName = "Interact to enter screen"

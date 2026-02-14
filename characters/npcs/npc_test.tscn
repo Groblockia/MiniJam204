@@ -1941,7 +1941,7 @@ tracks/159/loop_wrap = true
 tracks/159/keys = PackedFloat32Array(0, 1, 0.0696001, 0.0026693116, 0.038230516, 0.99683857)
 
 [sub_resource type="Animation" id="Animation_lh4ra"]
-resource_name = "rig|rigAction"
+resource_name = "walking"
 loop_mode = 1
 tracks/0/type = "position_3d"
 tracks/0/imported = true
@@ -3067,14 +3067,16 @@ tracks/159/keys = PackedFloat32Array(0, 1, 1.0137656, 0.9749977, 1.0120041, 0.33
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_61h5p"]
 _data = {
 &"RESET": SubResource("Animation_c3tt0"),
-&"rig|rigAction": SubResource("Animation_lh4ra")
+&"walking": SubResource("Animation_lh4ra")
 }
 
 [node name="npc_test" type="CharacterBody3D" unique_id=1447798352]
 collision_layer = 8
+collision_mask = 9
 script = ExtResource("1_xgqvg")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1521777205]
+target_desired_distance = 1.5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=11260288]
 shape = SubResource("CapsuleShape3D_yfhrv")
@@ -4650,4 +4652,4 @@ skeleton = NodePath("..")
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_61h5p")
 
-[connection signal="navigation_finished" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
+[connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]

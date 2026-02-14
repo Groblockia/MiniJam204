@@ -13,6 +13,7 @@ var last_event_time := -1.0
 @onready var node_viewport: SubViewport = $SubViewport
 @onready var node_quad: MeshInstance3D = $MeshInstance3D
 @onready var node_area: Area3D = $Area3D
+@onready var camera_placement = $CameraPlacement
 
 var is_using:bool = false
 
@@ -132,6 +133,7 @@ func rotate_area_to_billboard() -> void:
 		node_area.rotate_object_local(Vector3.BACK, camera.rotation.z)
 
 func interacted() -> void:
+	GameManager.enter_screen.emit(%CameraPlacement.global_position, %CameraPlacement.global_rotation)
 	is_using = true
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	$CollisionShape3D.disabled = true

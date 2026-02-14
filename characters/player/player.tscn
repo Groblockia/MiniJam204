@@ -40,4 +40,9 @@ collide_with_areas = true
 unique_name_in_owner = true
 offset_right = 40.0
 offset_bottom = 23.0
-text = "CACA"
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1771492074]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 32

@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://0c8jn5gxq0sg"]
+
+[ext_resource type="PackedScene" uid="uid://c6b83u13qladj" path="res://assets/Caisse/Caisse.fbx" id="1_1xwrp"]
+[ext_resource type="Texture2D" uid="uid://r7vgwy3gqbk1" path="res://assets/Caisse/Caisse_M_Outer_Screen_BaseColor.1001.png" id="2_xsy5c"]
+[ext_resource type="Texture2D" uid="uid://boa10q43apy5a" path="res://assets/Caisse/Caisse_M_Outer_Screen_Emissive.1001.png" id="3_h46yh"]
+[ext_resource type="Texture2D" uid="uid://rg1jxqrl57j3" path="res://assets/Caisse/Caisse_M_Outer_Screen_Height.1001.png" id="4_xl5ae"]
+[ext_resource type="Texture2D" uid="uid://dfd8l1bntm3nx" path="res://assets/Caisse/Caisse_M_Outer_Screen_Metallic.1001.png" id="5_kwond"]
+[ext_resource type="Texture2D" uid="uid://bjyuee433xh28" path="res://assets/Caisse/Caisse_M_Outer_Screen_Normal.1001.png" id="6_65fhc"]
+[ext_resource type="Texture2D" uid="uid://ba0eexmhb54fi" path="res://assets/Caisse/Caisse_M_Outer_Screen_Roughness.1001.png" id="7_kqb86"]
+[ext_resource type="Texture2D" uid="uid://rfln2mypfco4" path="res://assets/Caisse/Caisse_M_Screen_BaseColor.1001.png" id="8_untek"]
+[ext_resource type="Texture2D" uid="uid://bfnlf63xqaen" path="res://assets/Caisse/Caisse_M_Screen_Emissive.1001.png" id="9_igvy1"]
+[ext_resource type="Texture2D" uid="uid://dlaj74rlx4a2j" path="res://assets/Caisse/Caisse_M_Screen_Height.1001.png" id="10_c0yrl"]
+[ext_resource type="Texture2D" uid="uid://dhi6uj1qb1has" path="res://assets/Caisse/Caisse_M_Screen_Metallic.1001.png" id="11_phs2c"]
+[ext_resource type="Texture2D" uid="uid://svhatqmhmcyr" path="res://assets/Caisse/Caisse_M_Screen_Normal.1001.png" id="12_gmloc"]
+[ext_resource type="Texture2D" uid="uid://djawrewybgkek" path="res://assets/Caisse/Caisse_M_Screen_Roughness.1001.png" id="13_l58lo"]
+[ext_resource type="Texture2D" uid="uid://c30356f33qven" path="res://assets/Caisse/Caisse_M_Ticket_BaseColor.1001.png" id="14_siah3"]
+[ext_resource type="Texture2D" uid="uid://dfvmmukybxts" path="res://assets/Caisse/Caisse_M_Ticket_Emissive.1001.png" id="15_syj0i"]
+[ext_resource type="Texture2D" uid="uid://dm6yxg7w2e0xu" path="res://assets/Caisse/Caisse_M_Ticket_Height.1001.png" id="16_7303t"]
+[ext_resource type="Texture2D" uid="uid://udjym4e2h714" path="res://assets/Caisse/Caisse_M_Ticket_Metallic.1001.png" id="17_1g6cx"]
+[ext_resource type="Texture2D" uid="uid://bjtg0amb20dly" path="res://assets/Caisse/Caisse_M_Ticket_Normal.1001.png" id="18_2oley"]
+[ext_resource type="Texture2D" uid="uid://wvdna3xc7h5y" path="res://assets/Caisse/Caisse_M_Ticket_Roughness.1001.png" id="19_e3jsp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pb244"]
+albedo_texture = ExtResource("2_xsy5c")
+metallic = 1.0
+metallic_texture = ExtResource("5_kwond")
+roughness_texture = ExtResource("7_kqb86")
+emission_enabled = true
+emission_texture = ExtResource("3_h46yh")
+normal_enabled = true
+normal_texture = ExtResource("6_65fhc")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_xl5ae")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0b2sf"]
+albedo_texture = ExtResource("8_untek")
+metallic = 1.0
+metallic_texture = ExtResource("11_phs2c")
+roughness_texture = ExtResource("13_l58lo")
+emission_enabled = true
+emission_texture = ExtResource("9_igvy1")
+normal_enabled = true
+normal_texture = ExtResource("12_gmloc")
+heightmap_enabled = true
+heightmap_texture = ExtResource("10_c0yrl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y5lvl"]
+albedo_texture = ExtResource("14_siah3")
+metallic = 1.0
+metallic_texture = ExtResource("17_1g6cx")
+roughness_texture = ExtResource("19_e3jsp")
+emission_enabled = true
+emission_texture = ExtResource("15_syj0i")
+normal_enabled = true
+normal_texture = ExtResource("18_2oley")
+heightmap_enabled = true
+heightmap_texture = ExtResource("16_7303t")
+
+[node name="Caisse" unique_id=1610126103 instance=ExtResource("1_1xwrp")]
+
+[node name="Caisse" parent="." index="0" unique_id=1915618272]
+surface_material_override/1 = SubResource("StandardMaterial3D_pb244")
+surface_material_override/2 = SubResource("StandardMaterial3D_0b2sf")
+surface_material_override/3 = SubResource("StandardMaterial3D_y5lvl")
