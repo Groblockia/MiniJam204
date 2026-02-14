@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://6qadhupxos60"]
+
+[ext_resource type="PackedScene" uid="uid://c2o2yqi6wwd41" path="res://assets/customers/Customer1/Customer1.fbx" id="1_hhc40"]
+[ext_resource type="Texture2D" uid="uid://de53m4yre5wel" path="res://assets/customers/Customer1/Customer1_M_Hand_BaseColor.1001.png" id="2_7rb3t"]
+[ext_resource type="Texture2D" uid="uid://c7tur3ya0egj0" path="res://assets/customers/Customer1/Customer1_M_Hand_Emissive.1001.png" id="3_okagx"]
+[ext_resource type="Texture2D" uid="uid://dtv2u5omnb2vd" path="res://assets/customers/Customer1/Customer1_M_Hand_Height.1001.png" id="4_r20bb"]
+[ext_resource type="Texture2D" uid="uid://ecn3g1ikepwo" path="res://assets/customers/Customer1/Customer1_M_Hand_Metallic.1001.png" id="5_osrqf"]
+[ext_resource type="Texture2D" uid="uid://cqndyo3ptjrux" path="res://assets/customers/Customer1/Customer1_M_Hand_Normal.1001.png" id="6_h7frc"]
+[ext_resource type="Texture2D" uid="uid://dujg3nu7cjpub" path="res://assets/customers/Customer1/Customer1_M_Hand_Roughness.1001.png" id="7_fnass"]
+[ext_resource type="Texture2D" uid="uid://b8ekmev30oent" path="res://assets/customers/Customer1/Customer1_M_Shirt_BaseColor.1001.png" id="8_pr8yq"]
+[ext_resource type="Texture2D" uid="uid://dlt80jugl03d1" path="res://assets/customers/Customer1/Customer1_M_Shirt_Emissive.1001.png" id="9_tryu6"]
+[ext_resource type="Texture2D" uid="uid://c2hjwuy5i52x7" path="res://assets/customers/Customer1/Customer1_M_Shirt_Height.1001.png" id="10_h3d5n"]
+[ext_resource type="Texture2D" uid="uid://c6681rf05ei8l" path="res://assets/customers/Customer1/Customer1_M_Shirt_Metallic.1001.png" id="11_v8si4"]
+[ext_resource type="Texture2D" uid="uid://cbylhxotaenel" path="res://assets/customers/Customer1/Customer1_M_Shirt_Normal.1001.png" id="12_gcoi1"]
+[ext_resource type="Texture2D" uid="uid://8g5lj48h410v" path="res://assets/customers/Customer1/Customer1_M_Shirt_Roughness.1001.png" id="13_0jocy"]
+[ext_resource type="Texture2D" uid="uid://1jwucip3l4im" path="res://assets/customers/Customer1/Customer1_M_Pants_BaseColor.1001.png" id="14_po36x"]
+[ext_resource type="Texture2D" uid="uid://4t35m7m6vmal" path="res://assets/customers/Customer1/Customer1_M_Pants_Emissive.1001.png" id="15_np40i"]
+[ext_resource type="Texture2D" uid="uid://bef3yj5kup8d6" path="res://assets/customers/Customer1/Customer1_M_Pants_Height.1001.png" id="16_buqqq"]
+[ext_resource type="Texture2D" uid="uid://cd7b8epbki0uq" path="res://assets/customers/Customer1/Customer1_M_Pants_Metallic.1001.png" id="17_qtsu1"]
+[ext_resource type="Texture2D" uid="uid://b87hys1crn858" path="res://assets/customers/Customer1/Customer1_M_Pants_Normal.1001.png" id="18_pg36e"]
+[ext_resource type="Texture2D" uid="uid://b8cfb0lnu5dmk" path="res://assets/customers/Customer1/Customer1_M_Pants_Roughness.1001.png" id="19_jyw4l"]
+[ext_resource type="Texture2D" uid="uid://chbpyhhu5luvn" path="res://assets/customers/Customer1/Customer1_M_Boots_BaseColor.1001.png" id="20_wb66e"]
+[ext_resource type="Texture2D" uid="uid://cf0me7s86ltud" path="res://assets/customers/Customer1/Customer1_M_Boots_Emissive.1001.png" id="21_au250"]
+[ext_resource type="Texture2D" uid="uid://ck0njs2hkw7aw" path="res://assets/customers/Customer1/Customer1_M_Boots_Height.1001.png" id="22_rxq7h"]
+[ext_resource type="Texture2D" uid="uid://b6f8p4x1opiug" path="res://assets/customers/Customer1/Customer1_M_Boots_Metallic.1001.png" id="23_fnkp8"]
+[ext_resource type="Texture2D" uid="uid://vt4o8gc8s78n" path="res://assets/customers/Customer1/Customer1_M_Boots_Normal.1001.png" id="24_d0nxm"]
+[ext_resource type="Texture2D" uid="uid://cmfkpsmkgp8w2" path="res://assets/customers/Customer1/Customer1_M_Boots_Roughness.1001.png" id="25_8a5o0"]
+[ext_resource type="Texture2D" uid="uid://pfuwt46kmlqa" path="res://assets/customers/Customer1/Customer1_M_Face_BaseColor.1001.png" id="26_u7b6g"]
+[ext_resource type="Texture2D" uid="uid://kk71xu6130ct" path="res://assets/customers/Customer1/Customer1_M_Face_Emissive.1001.png" id="27_snm1k"]
+[ext_resource type="Texture2D" uid="uid://d3g0jqagjckx3" path="res://assets/customers/Customer1/Customer1_M_Face_Height.1001.png" id="28_exuf2"]
+[ext_resource type="Texture2D" uid="uid://rmcd5frlmy5w" path="res://assets/customers/Customer1/Customer1_M_Face_Metallic.1001.png" id="29_qdakd"]
+[ext_resource type="Texture2D" uid="uid://ftopi0yta7ug" path="res://assets/customers/Customer1/Customer1_M_Face_Normal.1001.png" id="30_b6mpw"]
+[ext_resource type="Texture2D" uid="uid://d4hcdrkacyguu" path="res://assets/customers/Customer1/Customer1_M_Face_Roughness.1001.png" id="31_6ypab"]
+[ext_resource type="Texture2D" uid="uid://datbqoevfisrq" path="res://assets/customers/Customer1/Customer1_M_Hair_BaseColor.1001.png" id="32_pr8yq"]
+[ext_resource type="Texture2D" uid="uid://dw6rtjv0a3tgi" path="res://assets/customers/Customer1/Customer1_M_Hair_Emissive.1001.png" id="33_tryu6"]
+[ext_resource type="Texture2D" uid="uid://fy6txmtwekqf" path="res://assets/customers/Customer1/Customer1_M_Hair_Height.1001.png" id="34_h3d5n"]
+[ext_resource type="Texture2D" uid="uid://chuq568vo71pl" path="res://assets/customers/Customer1/Customer1_M_Hair_Metallic.1001.png" id="35_v8si4"]
+[ext_resource type="Texture2D" uid="uid://l7egw5kiqfpx" path="res://assets/customers/Customer1/Customer1_M_Hair_Normal.1001.png" id="36_gcoi1"]
+[ext_resource type="Texture2D" uid="uid://85qh8c2ci43o" path="res://assets/customers/Customer1/Customer1_M_Hair_Roughness.1001.png" id="37_0jocy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hhc40"]
+albedo_texture = ExtResource("2_7rb3t")
+metallic = 1.0
+metallic_texture = ExtResource("5_osrqf")
+roughness_texture = ExtResource("7_fnass")
+emission_enabled = true
+emission_texture = ExtResource("3_okagx")
+normal_enabled = true
+normal_texture = ExtResource("6_h7frc")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_r20bb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7bi2q"]
+albedo_texture = ExtResource("8_pr8yq")
+metallic = 1.0
+metallic_texture = ExtResource("11_v8si4")
+roughness_texture = ExtResource("13_0jocy")
+emission_enabled = true
+emission_texture = ExtResource("9_tryu6")
+normal_enabled = true
+normal_texture = ExtResource("12_gcoi1")
+heightmap_enabled = true
+heightmap_texture = ExtResource("10_h3d5n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_timjt"]
+albedo_texture = ExtResource("14_po36x")
+metallic = 1.0
+metallic_texture = ExtResource("17_qtsu1")
+roughness_texture = ExtResource("19_jyw4l")
+emission_enabled = true
+emission_texture = ExtResource("15_np40i")
+normal_enabled = true
+normal_texture = ExtResource("18_pg36e")
+heightmap_enabled = true
+heightmap_texture = ExtResource("16_buqqq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oppci"]
+albedo_texture = ExtResource("20_wb66e")
+metallic = 1.0
+metallic_texture = ExtResource("23_fnkp8")
+roughness_texture = ExtResource("25_8a5o0")
+emission_enabled = true
+emission_texture = ExtResource("21_au250")
+normal_enabled = true
+normal_texture = ExtResource("24_d0nxm")
+heightmap_enabled = true
+heightmap_texture = ExtResource("22_rxq7h")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pwgpn"]
+albedo_texture = ExtResource("26_u7b6g")
+metallic = 1.0
+metallic_texture = ExtResource("29_qdakd")
+roughness_texture = ExtResource("31_6ypab")
+emission_enabled = true
+emission_texture = ExtResource("27_snm1k")
+normal_enabled = true
+normal_texture = ExtResource("30_b6mpw")
+heightmap_enabled = true
+heightmap_texture = ExtResource("28_exuf2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xqjju"]
+albedo_texture = ExtResource("32_pr8yq")
+metallic = 1.0
+metallic_texture = ExtResource("35_v8si4")
+roughness_texture = ExtResource("37_0jocy")
+emission_enabled = true
+emission_texture = ExtResource("33_tryu6")
+normal_enabled = true
+normal_texture = ExtResource("36_gcoi1")
+heightmap_enabled = true
+heightmap_texture = ExtResource("34_h3d5n")
+
+[node name="Customer1" unique_id=1334293094 instance=ExtResource("1_hhc40")]
+
+[node name="Body" parent="." index="0" unique_id=226318751]
+surface_material_override/0 = SubResource("StandardMaterial3D_hhc40")
+surface_material_override/1 = SubResource("StandardMaterial3D_7bi2q")
+surface_material_override/2 = SubResource("StandardMaterial3D_timjt")
+surface_material_override/3 = SubResource("StandardMaterial3D_oppci")
+surface_material_override/4 = SubResource("StandardMaterial3D_pwgpn")
+surface_material_override/5 = SubResource("StandardMaterial3D_xqjju")

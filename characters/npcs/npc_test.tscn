@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bne4y5xn6jaxj"]
 
 [ext_resource type="Script" uid="uid://p6uxr4q1e4b6" path="res://characters/npcs/npc_test.gd" id="1_xgqvg"]
+[ext_resource type="PackedScene" uid="uid://6qadhupxos60" path="res://assets/customers/Customer1/customer_1.tscn" id="2_3ph1u"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yfhrv"]
 height = 2.5
@@ -3083,6 +3084,7 @@ shape = SubResource("CapsuleShape3D_yfhrv")
 
 [node name="Customer_Walk_Animationwithmesh" type="Node3D" parent="." unique_id=536684288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2, 0)
+visible = false
 
 [node name="rig" type="Node3D" parent="Customer_Walk_Animationwithmesh" unique_id=1155193543]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
@@ -4651,5 +4653,8 @@ skeleton = NodePath("..")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Customer_Walk_Animationwithmesh" unique_id=35091716]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_61h5p")
+
+[node name="Customer1" parent="." unique_id=1334293094 instance=ExtResource("2_3ph1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1672076, 0)
 
 [connection signal="target_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_target_reached"]

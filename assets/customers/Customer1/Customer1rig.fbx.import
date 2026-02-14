@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dql82cr1fq5n3"
-path="res://.godot/imported/Customer_Walk_Animation.fbx-1df9789d9b78ad76c797f821b1354a6e.scn"
+uid="uid://djxpetx6o7da"
+path="res://.godot/imported/Customer1rig.fbx-ff99d757f878619b1ba6e7f01595e3b1.scn"
 
 [deps]
 
-source_file="res://anim/Customer_Walk_Animation.fbx"
-dest_files=["res://.godot/imported/Customer_Walk_Animation.fbx-1df9789d9b78ad76c797f821b1354a6e.scn"]
+source_file="res://assets/customers/Customer1/Customer1rig.fbx"
+dest_files=["res://.godot/imported/Customer1rig.fbx-ff99d757f878619b1ba6e7f01595e3b1.scn"]
 
 [params]
 
