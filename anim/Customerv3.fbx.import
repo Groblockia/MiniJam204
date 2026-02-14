@@ -1,15 +1,15 @@
 [remap]
 
-importer="animation_library"
+importer="scene"
 importer_version=1
-type="AnimationLibrary"
-uid="uid://dog56p6qdad03"
-path="res://.godot/imported/CustomerWalkAnimationv2.fbx-24f83ccc029116a4e89d2ab927e6b44a.res"
+type="PackedScene"
+uid="uid://7mbkxg0lg0wi"
+path="res://.godot/imported/Customerv3.fbx-8c0e557b5e6d76a34c6f544a13a096de.scn"
 
 [deps]
 
-source_file="res://anim/CustomerWalkAnimationv2.fbx"
-dest_files=["res://.godot/imported/CustomerWalkAnimationv2.fbx-24f83ccc029116a4e89d2ab927e6b44a.res"]
+source_file="res://anim/Customerv3.fbx"
+dest_files=["res://.godot/imported/Customerv3.fbx-8c0e557b5e6d76a34c6f544a13a096de.scn"]
 
 [params]
 
