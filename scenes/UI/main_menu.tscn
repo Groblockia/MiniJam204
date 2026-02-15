@@ -1,5 +1,50 @@
 [gd_scene format=3 uid="uid://85pi3mk8010h"]
 
+[ext_resource type="Texture2D" uid="uid://5kxhas52k0ep" path="res://assets/textures/Texturelabs_Brick_159M.jpg" id="1_qwnig"]
+[ext_resource type="Script" uid="uid://bc5oslh6r84gv" path="res://scenes/UI/main_menu.gd" id="1_yonvy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hifd2"]
+texture = ExtResource("1_qwnig")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yonvy"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwnig"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+corner_detail = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5jstl"]
+bg_color = Color(0, 0, 0, 0.47058824)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+corner_detail = 16
+
 [node name="MainMenu" type="Control" unique_id=659669736]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +52,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_yonvy")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1331525347]
 layout_mode = 1
@@ -15,6 +62,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hifd2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=559270226]
 layout_mode = 2
@@ -33,12 +81,31 @@ size_flags_vertical = 3
 [node name="StartButton" type="Button" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=665702703]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_yonvy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qwnig")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5jstl")
 text = "Start game"
 
 [node name="QuitButton" type="Button" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=1352346637]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_yonvy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qwnig")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5jstl")
 text = "Quit game"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=1351701252]
+layout_mode = 2
+
+[node name="HSlider" type="HSlider" parent="PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=315562875]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 10.0
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=2003388697]
+layout_mode = 2
 
 [node name="Control2" type="Control" parent="PanelContainer/HBoxContainer/VBoxContainer" unique_id=1499506438]
 layout_mode = 2
@@ -47,3 +114,6 @@ size_flags_vertical = 3
 [node name="Control" type="Control" parent="PanelContainer/HBoxContainer" unique_id=905816187]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[connection signal="pressed" from="PanelContainer/HBoxContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

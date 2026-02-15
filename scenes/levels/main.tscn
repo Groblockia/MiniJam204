@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cyaa6v0cwy3rm"]
 
 [ext_resource type="Texture2D" uid="uid://dyjcs14qw7y2i" path="res://icon.svg" id="1_o5qli"]
-[ext_resource type="Script" uid="uid://ba31adpclufx5" path="res://scenes/main.gd" id="1_o6xl0"]
+[ext_resource type="Script" uid="uid://ba31adpclufx5" path="res://scenes/levels/main.gd" id="1_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://dcssat7fkjr2t" path="res://characters/player/player.tscn" id="2_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://2x5fanoydqxa" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_BaseColor.1001.png" id="2_mlv25"]
 [ext_resource type="Texture2D" uid="uid://c0d2gyy8h0ly0" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_Emissive.1001.png" id="3_a82wo"]

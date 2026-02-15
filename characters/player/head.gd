@@ -2,8 +2,11 @@ extends Node3D
 
 @onready var player = $".."
 @onready var camera = %Camera
+#var sensi: float
 
 func _ready() -> void:
+	var sensi = GameManager.mouse_sensibility
+	#print("sensi: " ,sensi)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 #func _physics_process(_delta: float) -> void:

@@ -1,6 +1,7 @@
 extends Node
 
 @onready var base_npc = preload("res://characters/npcs/npc_test.tscn")
+@onready var main_scene = preload("res://scenes/levels/main.tscn")
 
 signal enter_screen(pos, rot)
 signal leave_screen
@@ -12,6 +13,7 @@ var player
 var order_point
 var spawn_point
 var leave_point
+var mouse_sensibility: float
 
 var wait_line: Array
 var can_spawn := true
@@ -23,7 +25,6 @@ var is_ordering := false
 var coffee: int
 var food: int
 
-
 func _ready():
 	pass
 
@@ -31,7 +32,9 @@ func _process(_delta: float) -> void:
 	if client_counter > 10:
 		is_finished = true
 
-## starts the whole game logic
+func launch_main_scene():
+	get_tree().change_scene_to_file("res://scenes/levels/main.tscn")
+
 func start_game():
 	can_spawn = true
 	npc_spawn_timer()
