@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btmurl6hr70wb" path="res://scenes/register/gui_panel.gd" id="1_kkv0r"]
 [ext_resource type="PackedScene" uid="uid://mrtd5mmlpikj" path="res://scenes/register/UI/register_ui.tscn" id="2_p3tx3"]
-[ext_resource type="PackedScene" uid="uid://0c8jn5gxq0sg" path="res://assets/Caisse/register.tscn" id="3_x2pcn"]
+[ext_resource type="PackedScene" uid="uid://0c8jn5gxq0sg" path="res://assets/3d/Caisse/register.tscn" id="3_x2pcn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xsa4e"]
 size = Vector3(1.4564819, 0.85191345, 0.7336502)

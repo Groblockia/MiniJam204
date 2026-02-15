@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://mcgarv44ofi6"]
 
 [ext_resource type="Script" uid="uid://dv8bxgyxprp3e" path="res://scenes/interactables/coffee_machine/coffee_machine.gd" id="1_d04mg"]
-[ext_resource type="PackedScene" uid="uid://cborq3fvjwdek" path="res://assets/coffee_machine/coffe_machine.tscn" id="1_ltfva"]
+[ext_resource type="PackedScene" uid="uid://cborq3fvjwdek" path="res://assets/3d/coffee_machine/coffe_machine.tscn" id="1_ltfva"]
 [ext_resource type="PackedScene" uid="uid://2xg6fayhpxip" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.tscn" id="3_pmk27"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_afrgf"]

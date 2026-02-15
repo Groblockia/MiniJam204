@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://2xg6fayhpxip"]
 
-[ext_resource type="PackedScene" uid="uid://bv10foqbxrevj" path="res://assets/glass_holder/glass_holder.tscn" id="1_3bf6o"]
+[ext_resource type="PackedScene" uid="uid://bv10foqbxrevj" path="res://assets/3d/glass_holder/glass_holder.tscn" id="1_3bf6o"]
 [ext_resource type="Script" uid="uid://dfy1siqt332ng" path="res://scenes/interactables/glass_holder_scripted/glass_holder_scripted.gd" id="1_k0lrv"]
-[ext_resource type="PackedScene" uid="uid://uhs7bowdv7c" path="res://assets/glass/glass.tscn" id="2_02kvt"]
+[ext_resource type="PackedScene" uid="uid://uhs7bowdv7c" path="res://assets/3d/glass/glass.tscn" id="2_02kvt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bt2el"]
 size = Vector3(1.1220703, 0.49145508, 0.29663086)

@@ -43,6 +43,8 @@ func _input(_event: InputEvent) -> void:
 		toggle_mouse()
 	if Input.is_action_just_pressed("interact"):
 		send_interact()
+	if Input.is_action_just_pressed("test"):
+		EventManager.spawn_screamer_test(self.position)
 
 func toggle_mouse() -> void:
 	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -63,7 +65,7 @@ func show_interact_prompt():
 	var col = aim_raycast.get_collider()
 	if col is Interactable:
 		%InteractLabel.text = col.displayName
-		%InteractLabel.position = %Camera.unproject_position(col.position)
+		%InteractLabel.position = %Camera.unproject_position(col.global_position)
 		%InteractLabel.show()
 	else:
 		%InteractLabel.hide()

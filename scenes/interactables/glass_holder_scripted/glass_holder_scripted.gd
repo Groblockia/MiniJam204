@@ -1,6 +1,6 @@
 extends Interactable
 
-@onready var glass = preload("res://assets/glass/glass.tscn")
+@onready var glass = preload("res://assets/3d/glass/glass.tscn")
 @onready var container = $GlassContainer
 
 var glasses: Array

@@ -1,0 +1,274 @@
+[gd_scene format=3 uid="uid://xhwhthbms0ro"]
+
+[ext_resource type="PackedScene" uid="uid://dhsjgr2weofpg" path="res://assets/3d/Coffee_shop/Coffee_Shop.fbx" id="1_m8xyf"]
+[ext_resource type="Texture2D" uid="uid://2x5fanoydqxa" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_BaseColor.1001.png" id="2_ke8uf"]
+[ext_resource type="Texture2D" uid="uid://c0d2gyy8h0ly0" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_Emissive.1001.png" id="3_2v5vg"]
+[ext_resource type="Texture2D" uid="uid://d3qbs5idunte1" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_Height.1001.png" id="4_6hx7o"]
+[ext_resource type="Texture2D" uid="uid://ch1ccm0g7cc5l" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_Metallic.1001.png" id="5_3wsdb"]
+[ext_resource type="Texture2D" uid="uid://jqsdabxjujbg" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_Normal.1001.png" id="6_awqb7"]
+[ext_resource type="Texture2D" uid="uid://kty4s5obcr06" path="res://assets/3d/Coffee_shop/Coffee_Shop_Ceiling_Roughness.1001.png" id="7_j50tj"]
+[ext_resource type="Texture2D" uid="uid://dmakkhxp4q4y2" path="res://assets/3d/Coffee_shop/Coffee_Shop_Chair_BaseColor.1001.png" id="8_dqnj2"]
+[ext_resource type="Texture2D" uid="uid://0rqnn62np206" path="res://assets/3d/Coffee_shop/Coffee_Shop_Chair_Emissive.1001.png" id="9_qpu56"]
+[ext_resource type="Texture2D" uid="uid://cpphc20qcnmdp" path="res://assets/3d/Coffee_shop/Coffee_Shop_Chair_Height.1001.png" id="10_ht73y"]
+[ext_resource type="Texture2D" uid="uid://dfxs8rr223o7l" path="res://assets/3d/Coffee_shop/Coffee_Shop_Chair_Metallic.1001.png" id="11_6df0m"]
+[ext_resource type="Texture2D" uid="uid://btw35ep3cy0es" path="res://assets/3d/Coffee_shop/Coffee_Shop_Chair_Normal.1001.png" id="12_joosv"]
+[ext_resource type="Texture2D" uid="uid://deo54i260aqav" path="res://assets/3d/Coffee_shop/Coffee_Shop_Chair_Roughness.1001.png" id="13_x0nne"]
+[ext_resource type="Texture2D" uid="uid://bfficq3niy8dp" path="res://assets/3d/Coffee_shop/Coffee_Shop_Floor_BaseColor.1001.png" id="14_3cqri"]
+[ext_resource type="Texture2D" uid="uid://br3sjr8qmodch" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_Low_Counter_BaseColor.1001.png" id="14_labk1"]
+[ext_resource type="Texture2D" uid="uid://ck4kyq7bwi6rr" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_Low_Counter_Emissive.1001.png" id="15_d1lwt"]
+[ext_resource type="Texture2D" uid="uid://dkxbx5stt50wk" path="res://assets/3d/Coffee_shop/Coffee_Shop_Floor_Emissive.1001.png" id="15_kgroh"]
+[ext_resource type="Texture2D" uid="uid://c6lsax1ndu7hv" path="res://assets/3d/Coffee_shop/Coffee_Shop_Floor_Height.1001.png" id="16_r1gsg"]
+[ext_resource type="Texture2D" uid="uid://di1da7m0nixtv" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_Low_Counter_Height.1001.png" id="16_ylm0n"]
+[ext_resource type="Texture2D" uid="uid://bctr71inhvtun" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_Low_Counter_Metallic.1001.png" id="17_hwos7"]
+[ext_resource type="Texture2D" uid="uid://7pr7wcv7wamc" path="res://assets/3d/Coffee_shop/Coffee_Shop_Floor_Metallic.1001.png" id="17_j3jr3"]
+[ext_resource type="Texture2D" uid="uid://d2s2mowp8q5lj" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_Low_Counter_Normal.1001.png" id="18_qowc5"]
+[ext_resource type="Texture2D" uid="uid://dpfbdrpwd0y4m" path="res://assets/3d/Coffee_shop/Coffee_Shop_Floor_Normal.1001.png" id="18_y42o2"]
+[ext_resource type="Texture2D" uid="uid://bmnhkfermx7fe" path="res://assets/3d/Coffee_shop/Coffee_Shop_Floor_Roughness.1001.png" id="19_57wc3"]
+[ext_resource type="Texture2D" uid="uid://dew2k1d1c2rj4" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_Low_Counter_Roughness.1001.png" id="19_otlbl"]
+[ext_resource type="Texture2D" uid="uid://dujx83haorfly" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Wood_BaseColor.1001.png" id="20_dqnj2"]
+[ext_resource type="Texture2D" uid="uid://dm4jn822p5q7m" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_High_Counter_BaseColor.1001.png" id="20_rkxf8"]
+[ext_resource type="Texture2D" uid="uid://b5h6s4wc1ux2f" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Wood_Emissive.1001.png" id="21_qpu56"]
+[ext_resource type="Texture2D" uid="uid://dh4q5bev44pr6" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_High_Counter_Emissive.1001.png" id="21_u1hyo"]
+[ext_resource type="Texture2D" uid="uid://qoipc85hqd4o" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Wood_Height.1001.png" id="22_ht73y"]
+[ext_resource type="Texture2D" uid="uid://c5lc4bble1nks" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_High_Counter_Height.1001.png" id="22_r3s6j"]
+[ext_resource type="Texture2D" uid="uid://d2tci63cyidjt" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Wood_Metallic.1001.png" id="23_6df0m"]
+[ext_resource type="Texture2D" uid="uid://bhvbq7stvvqbh" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_High_Counter_Metallic.1001.png" id="23_64iec"]
+[ext_resource type="Texture2D" uid="uid://x1weygb1npth" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_High_Counter_Normal.1001.png" id="24_88ykj"]
+[ext_resource type="Texture2D" uid="uid://c1vukl0i5jbaf" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Wood_Normal.1001.png" id="24_joosv"]
+[ext_resource type="Texture2D" uid="uid://bdwga6x8dxtxc" path="res://assets/3d/Coffee_shop/Coffee_Shop_M_High_Counter_Roughness.1001.png" id="25_h1810"]
+[ext_resource type="Texture2D" uid="uid://c082oqbn0a3o3" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Wood_Roughness.1001.png" id="25_x0nne"]
+[ext_resource type="Texture2D" uid="uid://bmvugdpr0htc6" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Metal_BaseColor.1001.png" id="26_3cqri"]
+[ext_resource type="Texture2D" uid="uid://rlyi0qrwm1ci" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Metal_Emissive.1001.png" id="27_kgroh"]
+[ext_resource type="Texture2D" uid="uid://ca8wp80m8coeh" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Metal_Height.1001.png" id="28_r1gsg"]
+[ext_resource type="Texture2D" uid="uid://1nnt5r4kowcy" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Metal_Metallic.1001.png" id="29_j3jr3"]
+[ext_resource type="Texture2D" uid="uid://dbqusg6umsw3f" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Metal_Normal.1001.png" id="30_y42o2"]
+[ext_resource type="Texture2D" uid="uid://coth1ja131ikd" path="res://assets/3d/Coffee_shop/Coffee_Shop_Rack_Metal_Roughness.1001.png" id="31_57wc3"]
+[ext_resource type="Texture2D" uid="uid://b4j8cgdakh7ja" path="res://assets/3d/Coffee_shop/Coffee_Shop_Side_Counter_BaseColor.1001.png" id="44_rkxf8"]
+[ext_resource type="Texture2D" uid="uid://8lk3qqg3p7cf" path="res://assets/3d/Coffee_shop/Coffee_Shop_Side_Counter_Emissive.1001.png" id="45_u1hyo"]
+[ext_resource type="Texture2D" uid="uid://dqvtuq1q76egb" path="res://assets/3d/Coffee_shop/Coffee_Shop_Side_Counter_Height.1001.png" id="46_r3s6j"]
+[ext_resource type="Texture2D" uid="uid://da8lt5024bhhr" path="res://assets/3d/Coffee_shop/Coffee_Shop_Side_Counter_Metallic.1001.png" id="47_64iec"]
+[ext_resource type="Texture2D" uid="uid://c0ru78op3ck4r" path="res://assets/3d/Coffee_shop/Coffee_Shop_Side_Counter_Normal.1001.png" id="48_88ykj"]
+[ext_resource type="Texture2D" uid="uid://q858t2ku568c" path="res://assets/3d/Coffee_shop/Coffee_Shop_Side_Counter_Roughness.1001.png" id="49_h1810"]
+[ext_resource type="Texture2D" uid="uid://coj1wjbc4fnmg" path="res://assets/3d/Coffee_shop/Coffee_Shop_Table_BaseColor.1001.png" id="50_wxyx7"]
+[ext_resource type="Texture2D" uid="uid://b2mufulrn3kmj" path="res://assets/3d/Coffee_shop/Coffee_Shop_Table_Emissive.1001.png" id="51_ts4f4"]
+[ext_resource type="Texture2D" uid="uid://mm6kc5bl40ow" path="res://assets/3d/Coffee_shop/Coffee_Shop_Table_Height.1001.png" id="52_lnriy"]
+[ext_resource type="Texture2D" uid="uid://bcxijcll3htse" path="res://assets/3d/Coffee_shop/Coffee_Shop_Table_Metallic.1001.png" id="53_a7n15"]
+[ext_resource type="Texture2D" uid="uid://6ist3rn5cim6" path="res://assets/3d/Coffee_shop/Coffee_Shop_Table_Normal.1001.png" id="54_lf1q6"]
+[ext_resource type="Texture2D" uid="uid://dgw677g038x7o" path="res://assets/3d/Coffee_shop/Coffee_Shop_Table_Roughness.1001.png" id="55_ta442"]
+[ext_resource type="Texture2D" uid="uid://seitwxbe08yj" path="res://assets/3d/Coffee_shop/Coffee_Shop_Wall_BaseColor.1001.png" id="56_g23em"]
+[ext_resource type="Texture2D" uid="uid://cr8tke8de8rny" path="res://assets/3d/Coffee_shop/Coffee_Shop_Wall_Emissive.1001.png" id="57_3718v"]
+[ext_resource type="Texture2D" uid="uid://b0par2ennosg6" path="res://assets/3d/Coffee_shop/Coffee_Shop_Wall_Height.1001.png" id="58_qeem6"]
+[ext_resource type="Texture2D" uid="uid://gqer0u7mtv1t" path="res://assets/3d/Coffee_shop/Coffee_Shop_Wall_Metallic.1001.png" id="59_yva2c"]
+[ext_resource type="Texture2D" uid="uid://vdwkprsfp404" path="res://assets/3d/Coffee_shop/Coffee_Shop_Wall_Normal.1001.png" id="60_a00px"]
+[ext_resource type="Texture2D" uid="uid://bvthnh8r8tisj" path="res://assets/3d/Coffee_shop/Coffee_Shop_Wall_Roughness.1001.png" id="61_ahlug"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mxav"]
+albedo_texture = ExtResource("2_ke8uf")
+metallic = 1.0
+metallic_texture = ExtResource("5_3wsdb")
+roughness_texture = ExtResource("7_j50tj")
+emission_enabled = true
+emission_texture = ExtResource("3_2v5vg")
+normal_enabled = true
+normal_texture = ExtResource("6_awqb7")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_6hx7o")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbnrf"]
+albedo_texture = ExtResource("8_dqnj2")
+metallic = 1.0
+metallic_texture = ExtResource("11_6df0m")
+roughness_texture = ExtResource("13_x0nne")
+emission_enabled = true
+emission_texture = ExtResource("9_qpu56")
+normal_enabled = true
+normal_texture = ExtResource("12_joosv")
+heightmap_enabled = true
+heightmap_texture = ExtResource("10_ht73y")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxyx7"]
+albedo_texture = ExtResource("14_labk1")
+metallic = 1.0
+metallic_texture = ExtResource("17_hwos7")
+roughness_texture = ExtResource("19_otlbl")
+emission_enabled = true
+emission_texture = ExtResource("15_d1lwt")
+normal_enabled = true
+normal_texture = ExtResource("18_qowc5")
+heightmap_enabled = true
+heightmap_texture = ExtResource("16_ylm0n")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ts4f4"]
+albedo_texture = ExtResource("20_rkxf8")
+metallic = 1.0
+metallic_texture = ExtResource("23_64iec")
+roughness_texture = ExtResource("25_h1810")
+emission_enabled = true
+emission_texture = ExtResource("21_u1hyo")
+normal_enabled = true
+normal_texture = ExtResource("24_88ykj")
+heightmap_enabled = true
+heightmap_texture = ExtResource("22_r3s6j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2fif5"]
+albedo_texture = ExtResource("14_3cqri")
+metallic = 1.0
+metallic_texture = ExtResource("17_j3jr3")
+roughness_texture = ExtResource("19_57wc3")
+emission_enabled = true
+emission_texture = ExtResource("15_kgroh")
+normal_enabled = true
+normal_texture = ExtResource("18_y42o2")
+heightmap_enabled = true
+heightmap_texture = ExtResource("16_r1gsg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cqri"]
+albedo_texture = ExtResource("20_dqnj2")
+metallic = 1.0
+metallic_texture = ExtResource("23_6df0m")
+roughness_texture = ExtResource("25_x0nne")
+emission_enabled = true
+emission_texture = ExtResource("21_qpu56")
+normal_enabled = true
+normal_texture = ExtResource("24_joosv")
+heightmap_enabled = true
+heightmap_texture = ExtResource("22_ht73y")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kgroh"]
+albedo_texture = ExtResource("26_3cqri")
+metallic = 1.0
+metallic_texture = ExtResource("29_j3jr3")
+roughness_texture = ExtResource("31_57wc3")
+emission_enabled = true
+emission_texture = ExtResource("27_kgroh")
+normal_enabled = true
+normal_texture = ExtResource("30_y42o2")
+heightmap_enabled = true
+heightmap_texture = ExtResource("28_r1gsg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lnriy"]
+albedo_texture = ExtResource("44_rkxf8")
+metallic = 1.0
+metallic_texture = ExtResource("47_64iec")
+roughness_texture = ExtResource("49_h1810")
+emission_enabled = true
+emission_texture = ExtResource("45_u1hyo")
+normal_enabled = true
+normal_texture = ExtResource("48_88ykj")
+heightmap_enabled = true
+heightmap_texture = ExtResource("46_r3s6j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g23em"]
+albedo_texture = ExtResource("50_wxyx7")
+metallic = 1.0
+metallic_texture = ExtResource("53_a7n15")
+roughness_texture = ExtResource("55_ta442")
+emission_enabled = true
+emission_texture = ExtResource("51_ts4f4")
+normal_enabled = true
+normal_texture = ExtResource("54_lf1q6")
+heightmap_enabled = true
+heightmap_texture = ExtResource("52_lnriy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6gnc"]
+albedo_texture = ExtResource("56_g23em")
+metallic = 1.0
+metallic_texture = ExtResource("59_yva2c")
+roughness_texture = ExtResource("61_ahlug")
+emission_enabled = true
+emission_texture = ExtResource("57_3718v")
+normal_enabled = true
+normal_texture = ExtResource("60_a00px")
+heightmap_enabled = true
+heightmap_texture = ExtResource("58_qeem6")
+
+[node name="Coffee_Shop" unique_id=101374179 instance=ExtResource("1_m8xyf")]
+
+[node name="Ceiling" parent="." index="0" unique_id=1179969546]
+surface_material_override/0 = SubResource("StandardMaterial3D_4mxav")
+
+[node name="Ceiling2" parent="." index="1" unique_id=1291263866]
+surface_material_override/0 = SubResource("StandardMaterial3D_4mxav")
+
+[node name="Chair" parent="." index="2" unique_id=1774335028]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_001" parent="." index="3" unique_id=348080855]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_002" parent="." index="4" unique_id=1587486439]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_003" parent="." index="5" unique_id=2072555488]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_004" parent="." index="6" unique_id=1089899751]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_005" parent="." index="7" unique_id=2116054291]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_006" parent="." index="8" unique_id=1812146204]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_007" parent="." index="9" unique_id=1769632588]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_008" parent="." index="10" unique_id=694885533]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_009" parent="." index="11" unique_id=1363590255]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_010" parent="." index="12" unique_id=260450033]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Chair_011" parent="." index="13" unique_id=342375668]
+surface_material_override/0 = SubResource("StandardMaterial3D_jbnrf")
+
+[node name="Counter" parent="." index="14" unique_id=1891285293]
+surface_material_override/0 = SubResource("StandardMaterial3D_wxyx7")
+surface_material_override/1 = SubResource("StandardMaterial3D_ts4f4")
+
+[node name="Floor" parent="." index="15" unique_id=2068893712]
+surface_material_override/0 = SubResource("StandardMaterial3D_2fif5")
+
+[node name="Floor2" parent="." index="16" unique_id=143020346]
+surface_material_override/0 = SubResource("StandardMaterial3D_2fif5")
+
+[node name="Rack" parent="." index="17" unique_id=2013076773]
+surface_material_override/0 = SubResource("StandardMaterial3D_3cqri")
+surface_material_override/1 = SubResource("StandardMaterial3D_kgroh")
+
+[node name="Side_Counter" parent="." index="18" unique_id=1153616153]
+surface_material_override/0 = SubResource("StandardMaterial3D_lnriy")
+
+[node name="Table" parent="." index="19" unique_id=105799175]
+surface_material_override/0 = SubResource("StandardMaterial3D_g23em")
+
+[node name="Table_001" parent="." index="20" unique_id=106478477]
+surface_material_override/0 = SubResource("StandardMaterial3D_g23em")
+
+[node name="Table_002" parent="." index="21" unique_id=2060599331]
+surface_material_override/0 = SubResource("StandardMaterial3D_g23em")
+
+[node name="Wall" parent="." index="22" unique_id=378290708]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")
+
+[node name="Wall1" parent="." index="23" unique_id=130338426]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")
+
+[node name="Wall2" parent="." index="24" unique_id=1305578130]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")
+
+[node name="Wall3" parent="." index="25" unique_id=280440908]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")
+
+[node name="Wall4" parent="." index="26" unique_id=1236517938]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")
+
+[node name="Wall5" parent="." index="27" unique_id=1406359663]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")
+
+[node name="Wall6" parent="." index="28" unique_id=201440903]
+surface_material_override/0 = SubResource("StandardMaterial3D_j6gnc")

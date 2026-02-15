@@ -1,6 +1,6 @@
 extends Interactable
 
-@onready var donut = preload("res://assets/Donuts/donuts.tscn")
+@onready var donut = preload("res://assets/3d/Donuts/donuts.tscn")
 @onready var container = $DonutContainer
 
 var donuts: Array
@@ -11,6 +11,17 @@ func _ready() -> void:
 		donuts.append(i)
 	position_donuts()
 	#print(donuts)
+
+func _process(_delta: float) -> void:
+	quantity = donuts.size()
+	if quantity >= 9: remove_donut(1)
+	#print(quantity)
+	
+	if Input.is_action_just_pressed("ui_up"):
+		add_donut(1)
+	if Input.is_action_just_pressed("ui_down"):
+		remove_donut(1)
+
 
 func interacted() -> void:
 	print("caca")
@@ -23,15 +34,7 @@ func interacted() -> void:
 		GameManager.respawn_food_box.emit()
 
 
-func _process(_delta: float) -> void:
-	quantity = donuts.size()
-	if quantity >= 9: remove_donut(1)
-	#print(quantity)
-	
-	if Input.is_action_just_pressed("ui_up"):
-		add_donut(1)
-	if Input.is_action_just_pressed("ui_down"):
-		remove_donut(1)
+
 
 func remove_donut(x:int):
 	if quantity <= 0: return

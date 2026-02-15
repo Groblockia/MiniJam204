@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dcr7w83srimyc" path="res://characters/player/player_script.gd" id="1_508ok"]
 [ext_resource type="Script" uid="uid://beynbd1f5ie6j" path="res://characters/player/head.gd" id="2_xxgcw"]
-[ext_resource type="PackedScene" uid="uid://dvmitxx7rn07q" path="res://assets/Box_Glass/glass_box.tscn" id="3_exd8k"]
-[ext_resource type="PackedScene" uid="uid://6wb0utlavxjq" path="res://assets/Box_Donuts/food_box.tscn" id="4_5dc8e"]
+[ext_resource type="PackedScene" uid="uid://dvmitxx7rn07q" path="res://assets/3d/Box_Glass/glass_box.tscn" id="3_exd8k"]
+[ext_resource type="PackedScene" uid="uid://6wb0utlavxjq" path="res://assets/3d/Box_Donuts/food_box.tscn" id="4_5dc8e"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_508ok"]
-height = 4.0
+height = 3.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_508ok"]
 height = 4.0
@@ -17,6 +17,7 @@ collision_mask = 13
 script = ExtResource("1_508ok")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=219722551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("CapsuleShape3D_508ok")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1558308065]
@@ -50,11 +51,13 @@ visible = false
 
 [node name="InteractLabel" type="Label" parent="CanvasLayer" unique_id=1173959722]
 unique_name_in_owner = true
+visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=1771492074]
 unique_name_in_owner = true
+visible = false
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 32

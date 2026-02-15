@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://0lahvcxw20i5"]
 
-[ext_resource type="Texture2D" uid="uid://boxvec3ujra5q" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_BaseColor.1001.png" id="1_oyty0"]
+[ext_resource type="Texture2D" uid="uid://boxvec3ujra5q" path="res://assets/3d/Box_Donuts/Box_Donuts_DefaultMaterial_BaseColor.1001.png" id="1_oyty0"]
 [ext_resource type="Script" uid="uid://b43skja2fjtur" path="res://scenes/interactables/food_box/food_box.gd" id="1_q2gm4"]
-[ext_resource type="Texture2D" uid="uid://y0s8a8j303wm" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Emissive.1001.png" id="2_wuggo"]
-[ext_resource type="Texture2D" uid="uid://db7npkoxrppjh" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Height.1001.png" id="3_2x3vg"]
-[ext_resource type="Texture2D" uid="uid://dbmflamhf5qb6" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Metallic.1001.png" id="4_w21qs"]
-[ext_resource type="Texture2D" uid="uid://dkv6aevwdifjn" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Normal.1001.png" id="5_qhpaw"]
-[ext_resource type="Texture2D" uid="uid://bj1pf8217qe6a" path="res://assets/Box_Donuts/Box_Donuts_DefaultMaterial_Roughness.1001.png" id="6_2ghsj"]
+[ext_resource type="Texture2D" uid="uid://y0s8a8j303wm" path="res://assets/3d/Box_Donuts/Box_Donuts_DefaultMaterial_Emissive.1001.png" id="2_wuggo"]
+[ext_resource type="Texture2D" uid="uid://db7npkoxrppjh" path="res://assets/3d/Box_Donuts/Box_Donuts_DefaultMaterial_Height.1001.png" id="3_2x3vg"]
+[ext_resource type="Texture2D" uid="uid://dbmflamhf5qb6" path="res://assets/3d/Box_Donuts/Box_Donuts_DefaultMaterial_Metallic.1001.png" id="4_w21qs"]
+[ext_resource type="Texture2D" uid="uid://dkv6aevwdifjn" path="res://assets/3d/Box_Donuts/Box_Donuts_DefaultMaterial_Normal.1001.png" id="5_qhpaw"]
+[ext_resource type="Texture2D" uid="uid://bj1pf8217qe6a" path="res://assets/3d/Box_Donuts/Box_Donuts_DefaultMaterial_Roughness.1001.png" id="6_2ghsj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4uw5v"]
 

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dvmitxx7rn07q"]
+
+[ext_resource type="PackedScene" uid="uid://cfoku3xrc47k8" path="res://assets/3d/Box_Glass/Glass_Box.fbx" id="1_xa7kx"]
+[ext_resource type="Texture2D" uid="uid://cc4is4nvclfs3" path="res://assets/3d/Box_Glass/Glass_Box_DefaultMaterial_BaseColor.1001.png" id="2_0gkko"]
+[ext_resource type="Texture2D" uid="uid://b3a873ma1ykbu" path="res://assets/3d/Box_Glass/Glass_Box_DefaultMaterial_Emissive.1001.png" id="3_ihwvs"]
+[ext_resource type="Texture2D" uid="uid://l52tkcebnpr7" path="res://assets/3d/Box_Glass/Glass_Box_DefaultMaterial_Height.1001.png" id="4_osv6f"]
+[ext_resource type="Texture2D" uid="uid://dxgb8khydw2dx" path="res://assets/3d/Box_Glass/Glass_Box_DefaultMaterial_Metallic.1001.png" id="5_7hnhr"]
+[ext_resource type="Texture2D" uid="uid://4hv625soklmm" path="res://assets/3d/Box_Glass/Glass_Box_DefaultMaterial_Normal.1001.png" id="6_rpiof"]
+[ext_resource type="Texture2D" uid="uid://cuweo2g6ok13p" path="res://assets/3d/Box_Glass/Glass_Box_DefaultMaterial_Roughness.1001.png" id="7_jxck3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5yim2"]
+albedo_texture = ExtResource("2_0gkko")
+metallic = 1.0
+metallic_texture = ExtResource("5_7hnhr")
+roughness_texture = ExtResource("7_jxck3")
+emission_enabled = true
+emission_texture = ExtResource("3_ihwvs")
+normal_enabled = true
+normal_texture = ExtResource("6_rpiof")
+heightmap_enabled = true
+heightmap_texture = ExtResource("4_osv6f")
+
+[node name="Glass_Box" unique_id=509422325 instance=ExtResource("1_xa7kx")]
+
+[node name="Carton_Glass" parent="." index="0" unique_id=802348554]
+surface_material_override/0 = SubResource("StandardMaterial3D_5yim2")
